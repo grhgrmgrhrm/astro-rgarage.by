@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import CtaBanner from '../../components/CtaBanner.astro';
+
+const services = await getCollection('services');
+
+// Group by category
+const categories: Record<string, { name: string; services: typeof services }> = {
+  slesarnye: { name: 'Слесарные работы', services: [] },
+  diagnostics: { name: 'Диагностика', services: [] },
+  evakuator: { name: 'Эвакуатор', services: [] },
+  avtoelektrika: { name: 'Автоэлектрика', services: [] },
+  kuzov: { name: 'Кузовной ремонт', services: [] },
+  shinomontazh: { name: 'Шиномонтаж', services: [] },
+  turbin: { name: 'Ремонт турбин', services: [] },
+  services: { name: 'Дополнительные услуги', services: [] },
+  other: { name: 'Прочие услуги', services: [] },
+  geo: { name: 'Эвакуатор по районам', services: [] },
+};
+
+for (const s of services) {
+  if (categories[s.data.category]) {
+    categories[s.data.category].services.push(s);
+  }
+}
+
+// Strip " в Минске" from titles for the listing page — looks cleaner in a list.
+// The full title with "в Минске" stays on the individual service page (h1, metaTitle).
+const cleanTitle = (title: string) => title.replace(/\s+в Минске\s*$/i, '').trim();
+---
+
+<BaseLayout
+  title="Все услуги — Автосервис «Ржавый Гараж»"
+  metaTitle="Все услуги автосервиса в Минске — Ржавый Гараж"
+  description="Полный список услуг автосервиса: слесарные работы, диагностика, эвакуатор, кузовной ремонт, автоэлектрика. ☎ +375 29 373-71-61"
+>
+  <div class="max-w-5xl mx-auto px-4 py-8">
+    <h1 class="mb-8">Все услуги</h1>
+
+    {Object.entries(categories)
+      .filter(([_, data]) => data.services.length > 0)
+      .map(([slug, data]) => (
+        <section class="section-brutal">
+          <h2>
+            <a href={`/kategoriya/${slug}`} class="no-underline">{data.name}</a>
+            <span class="text-garage-muted text-lg font-body normal-case"> ({data.services.length})</span>
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+            {data.services.map((s) => (
+              <a
+                href={`/uslugi/${s.data.slug}`}
+                class="card-brutal no-underline hover:border-garage-red transition-colors"
+              >
+                <h3 class="text-garage-red text-lg mb-1">{cleanTitle(s.data.title)}</h3>
+                {s.data.priceFrom && (
+                  <p class="text-garage-muted text-sm">{s.data.priceFrom}</p>
+                )}
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+  </div>
+
+  <CtaBanner
+    title="Не нашли нужную услугу?"
+    text="Звоните — расскажите о проблеме, подберём решение. Работаем со всеми марками авто."
+    phone="+375293737161"
+  />
+</BaseLayout>

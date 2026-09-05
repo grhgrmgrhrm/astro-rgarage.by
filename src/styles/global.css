@@ -1,0 +1,160 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Брутальный гараж — цветовая палитра */
+  --color-garage-black: #0a0a0a;
+  --color-garage-dark: #161616;
+  --color-garage-gray: #2a2a2a;
+  --color-garage-steel: #475569;
+  --color-garage-red: #db2d2e;
+  --color-garage-red-dark: #b82324;
+  --color-garage-red-light: #e84849;
+  --color-garage-light: #f5f5f5;
+  --color-garage-muted: #9ca3af;
+
+  /* Шрифты */
+  --font-heading: "Oswald", "Arial Narrow", sans-serif;
+  --font-body: "Work Sans", system-ui, sans-serif;
+
+  /* Брутальные тени */
+  --shadow-brutal: 6px 6px 0 0 currentColor;
+  --shadow-brutal-sm: 3px 3px 0 0 currentColor;
+}
+
+@layer base {
+  body {
+    @apply bg-garage-dark text-garage-light font-body antialiased;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold uppercase tracking-wide;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+  }
+
+  h1 {
+    @apply text-3xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl text-garage-red;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+
+  /* h4 inside category cards: small, normal case */
+  .cat-card-list h4 {
+    @apply text-xs font-normal normal-case tracking-normal;
+    font-family: var(--font-body);
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  /* Accordion inside prose: override Typography plugin styles */
+  .prose .tq-acc {
+    margin-top: 2rem;
+  }
+  .prose .tq-acc-q {
+    margin: 0 !important;
+    font-size: var(--text-xl) !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: .4px !important;
+    color: var(--color-text) !important;
+    background: none !important;
+    border: 0 !important;
+    border-bottom: none !important;
+    padding: 1.25rem 2rem 1.25rem 0 !important;
+    cursor: pointer !important;
+    text-align: left !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  .prose .tq-acc-q::after {
+    content: '+' !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-size: 1.5rem !important;
+    color: var(--color-garage-red) !important;
+    line-height: 1 !important;
+    background: none !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  .prose .tq-acc-item.open .tq-acc-q::after {
+    content: '–' !important;
+  }
+  .prose .tq-acc-item {
+    border-bottom: 1px solid var(--color-garage-gray) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .prose .tq-acc-a {
+    display: none !important;
+    padding: 0 2rem 1.5rem 0 !important;
+    margin: 0 !important;
+    font-size: var(--text-base) !important;
+    line-height: 1.7 !important;
+    color: var(--color-garage-muted) !important;
+  }
+  .prose .tq-acc-a p {
+    margin: 0 0 0.75rem !important;
+    color: var(--color-garage-muted) !important;
+  }
+  .prose .tq-acc-a p:last-child {
+    margin-bottom: 0 !important;
+  }
+  .prose .tq-acc-item.open .tq-acc-a {
+    display: block !important;
+  }
+
+  a {
+    @apply text-garage-red hover:text-garage-red-dark transition-colors;
+  }
+
+  /* Force prose to full width — Tailwind Typography sets max-width: 65ch */
+  .prose {
+    max-width: none !important;
+  }
+
+  .prose p,
+  .prose li,
+  .prose td,
+  .prose th {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+}
+
+@layer components {
+  .btn-brutal {
+    @apply inline-block bg-garage-red text-white font-heading font-bold uppercase px-6 py-3 border-2 border-garage-red shadow-brutal hover:bg-garage-red-dark hover:border-garage-red-dark transition-all active:translate-x-1 active:translate-y-1 active:shadow-none;
+  }
+
+  .btn-outline {
+    @apply inline-block bg-transparent text-garage-light font-heading font-bold uppercase px-6 py-3 border-2 border-garage-light shadow-brutal hover:bg-garage-light hover:text-garage-black transition-all active:translate-x-1 active:translate-y-1 active:shadow-none;
+  }
+
+  .card-brutal {
+    @apply bg-garage-gray border-2 border-garage-light/10 p-6 shadow-brutal-sm text-garage-light;
+  }
+
+  .section-brutal {
+    @apply border-t-4 border-garage-red py-12;
+  }
+}

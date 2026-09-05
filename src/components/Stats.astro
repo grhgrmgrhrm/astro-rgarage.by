@@ -1,0 +1,23 @@
+---
+/**
+ * Stats Counter — адаптация torque-and-tally
+ * Usage:
+ *   <Stats items={[{n:"10+",lbl:"лет опыта"}, ...]} dark={true} />
+ */
+interface Stat { n: string; lbl: string }
+interface Props { items: Stat[]; dark?: boolean }
+const { items, dark = true } = Astro.props;
+---
+
+<div class:list={["tq-section", { dark }]}>
+  <div class="tq-wrap">
+    <div class="tq-stats">
+      {items.map((s) => (
+        <div class="tq-stat">
+          <div class="n">{s.n}</div>
+          <div class="lbl">{s.lbl}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>

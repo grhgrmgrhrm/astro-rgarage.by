@@ -1,0 +1,28 @@
+---
+/**
+ * Process Steps — адаптация torque-and-tally
+ * Usage:
+ *   <ProcessSteps steps={[{title:"...",desc:"..."}, ...]} dark={false} />
+ */
+interface Step { title: string; desc: string }
+interface Props { steps: Step[]; dark?: boolean }
+const { steps, dark = false } = Astro.props;
+---
+
+<div class:list={["tq-section", { dark }]}>
+  <div class="tq-wrap">
+    <div class="tq-section-head center">
+      <p class="tq-eyebrow">Как мы работаем</p>
+      <h2>Процесс ремонта</h2>
+    </div>
+    <div class="tq-step-grid">
+      {steps.map((s, i) => (
+        <div class="tq-step">
+          <div class="num">{i + 1}</div>
+          <h3>{s.title}</h3>
+          <p>{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProcessSteps from '../components/ProcessSteps.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+---
+
+<BaseLayout
+  title="Юридическим лицам — Автосервис «Ржавый Гараж»"
+  metaTitle="Юридическим лицам — автосервис для корпоративных клиентов | Ржавый Гараж"
+  description="Обслуживание корпоративных автопарков в Минске. Безналичный расчёт, закрывающие документы, договор. Ремонт, ТО, эвакуация. ☎ +375 29 373-71-61"
+>
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Breadcrumbs -->
+    <nav class="text-sm text-garage-muted mb-6">
+      <a href="/" class="hover:text-garage-red">Главная</a>
+      <span class="mx-2">/</span>
+      <span class="text-garage-light">Юридическим лицам</span>
+    </nav>
+
+    <!-- Hero -->
+    <div
+      class="relative min-h-[300px] flex items-center justify-center mb-8 overflow-hidden border-2 border-garage-light/10"
+    >
+      <img src="/images/sto.jpg" alt="Автосервис для юридических лиц" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-garage-black/70"></div>
+      <div class="relative z-10 text-center px-4">
+        <h1 class="text-4xl md:text-5xl text-white mb-2">Юридическим лицам</h1>
+        <p class="text-garage-light text-lg">Обслуживание корпоративных автопарков</p>
+      </div>
+    </div>
+
+    <p class="text-garage-light text-lg mb-8">
+      Автосервис «Ржавый Гараж» предлагает комплексное обслуживание
+      корпоративных автопарков в Минске и Минской области. Мы работаем
+      с организациями любого размера — от небольших компаний до крупных
+      предприятий с большим автопарком.
+    </p>
+
+    <!-- Advantages -->
+    <section class="section-brutal">
+      <h2>Преимущества работы с нами</h2>
+      <div class="grid md:grid-cols-2 gap-4 mt-6">
+        <div class="card-brutal">
+          <h3 class="text-garage-red mb-2">Безналичный расчёт</h3>
+          <p class="text-garage-light text-sm">
+            Работаем с наличным и безналичным расчётом.
+            Предоставляем все необходимые закрывающие документы.
+          </p>
+        </div>
+        <div class="card-brutal">
+          <h3 class="text-garage-red mb-2">Договор</h3>
+          <p class="text-garage-light text-sm">
+            Заключаем официальный договор на обслуживание
+            автопарка с фиксированными ценами и сроками.
+          </p>
+        </div>
+        <div class="card-brutal">
+          <h3 class="text-garage-red mb-2">Приоритетное обслуживание</h3>
+          <p class="text-garage-light text-sm">
+            Корпоративные клиенты обслуживаются вне очереди.
+            Минимальное время простоя техники.
+          </p>
+        </div>
+        <div class="card-brutal">
+          <h3 class="text-garage-red mb-2">Эвакуатор 24/7</h3>
+          <p class="text-garage-light text-sm">
+            Круглосуточная эвакуация для корпоративных клиентов
+            по специальным тарифам. От 50 BYN по Минску.
+          </p>
+        </div>
+        <div class="card-brutal">
+          <h3 class="text-garage-red mb-2">Все марки авто</h3>
+          <p class="text-garage-light text-sm">
+            Обслуживаем легковые, коммерческие авто, микроавтобусы
+            и грузовики до 3,5 тонн. Любые марки и модели.
+          </p>
+        </div>
+        <div class="card-brutal">
+          <h3 class="text-garage-red mb-2">Гарантия</h3>
+          <p class="text-garage-light text-sm">
+            Гарантия на все виды работ. Используем только
+            качественные запчасти и расходные материалы.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services list -->
+    <section class="section-brutal">
+      <h2>Что мы предлагаем</h2>
+      <ul class="space-y-3 mt-6 text-garage-light">
+        <li>✅ Плановое ТО и регламентное обслуживание автопарка</li>
+        <li>✅ Слесарный ремонт любой сложности</li>
+        <li>✅ Диагностика двигателя, подвески, КПП, тормозной системы</li>
+        <li>✅ Автоэлектрика — ремонт и диагностика</li>
+        <li>✅ Кузовной ремонт и покраска</li>
+        <li>✅ Шиномонтаж и балансировка</li>
+        <li>✅ Ремонт турбин</li>
+        <li>✅ Эвакуация автомобилей 24/7</li>
+        <li>✅ Замена масла, фильтров, технических жидкостей</li>
+        <li>✅ Предпродажная подготовка автомобилей</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- How to start -->
+  <ProcessSteps
+    steps={[
+      { title: 'Звонок', desc: 'Позвоните нам и расскажите о вашем автопарке. Мы предложим оптимальные условия.' },
+      { title: 'Договор', desc: 'Заключаем договор с фиксированными ценами и сроками обслуживания.' },
+      { title: 'Обслуживание', desc: 'Приезжаете в удобное время, обслуживаетесь вне очереди. Безналичный расчёт.' },
+      { title: 'Гарантия', desc: 'Гарантия на все работы. Прозрачные отчёты по каждому автомобилю.' },
+    ]}
+    dark={false}
+  />
+
+  <!-- CTA -->
+  <CtaBanner
+    title="Готовы обсудить?"
+    text="Звоните — предложим лучшие условия для вашего бизнеса. Корпоративные тарифы, приоритетное обслуживание."
+    phone="+375293737161"
+  />
+</BaseLayout>

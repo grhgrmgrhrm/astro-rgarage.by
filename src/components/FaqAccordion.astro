@@ -1,0 +1,46 @@
+---
+/**
+ * FAQ Accordion — адаптация torque-and-tally
+ * Usage:
+ *   <FaqAccordion items={[{q:"...",a:"..."}, ...]} />
+ */
+interface FaqItem { q: string; a: string }
+interface Props { items: FaqItem[]; dark?: boolean }
+const { items, dark = false } = Astro.props;
+---
+
+<div class:list={["tq-section", { dark }]}>
+  <div class="tq-wrap narrow">
+    <div class="tq-section-head center">
+      <p class="tq-eyebrow">Вопросы и ответы</p>
+      <h2>Часто задаваемые вопросы</h2>
+    </div>
+    <div class="tq-acc" data-acc>
+      {items.map((item, i) => (
+        <div class="tq-acc-item" data-acc-item>
+          <button class="tq-acc-q" data-acc-q aria-expanded="false">{item.q}</button>
+          <div class="tq-acc-a">{item.a}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('[data-acc]').forEach((root) => {
+    root.querySelectorAll('[data-acc-q]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('[data-acc-item]');
+        const isOpen = item?.classList.contains('open');
+        root.querySelectorAll('[data-acc-item]').forEach((it) => {
+          it.classList.remove('open');
+          it.querySelector('[data-acc-q]')?.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item?.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  });
+</script>

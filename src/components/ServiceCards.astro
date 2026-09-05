@@ -1,0 +1,38 @@
+---
+/**
+ * Service Cards Grid — адаптация torque-and-tally
+ * Usage:
+ *   <ServiceCards items={[{href:"...",code:"EL",title:"...",desc:"...",price:"от 50 BYN"}, ...]} />
+ */
+interface Card {
+  href: string;
+  code?: string;
+  title: string;
+  desc: string;
+  price?: string;
+  priceLabel?: string;
+}
+interface Props { items: Card[] }
+const { items } = Astro.props;
+---
+
+<div class="tq-wrap">
+  <div class="tq-service-grid">
+    {items.map((c) => (
+      <a href={c.href} class="tq-s-card">
+        {c.code && <span class="tile">{c.code}</span>}
+        <h3>{c.title}</h3>
+        <p>{c.desc}</p>
+        <div class="foot">
+          {c.price && (
+            <div class="price">
+              <span class="lbl">{c.priceLabel || 'Цена'}</span>
+              <span class="val">{c.price}</span>
+            </div>
+          )}
+          <span class="more">Подробнее →</span>
+        </div>
+      </a>
+    ))}
+  </div>
+</div>

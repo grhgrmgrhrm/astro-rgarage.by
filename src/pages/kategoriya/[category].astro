@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import CtaBanner from '../../components/CtaBanner.astro';
+import MiniFaq from '../../components/MiniFaq.astro';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  const categories = [...new Set(services.map((s) => s.data.category))];
+  return categories.map((category) => ({
+    params: { category },
+    props: {
+      category,
+      services: services.filter((s) => s.data.category === category),
+    },
+  }));
+}
+
+interface Props {
+  category: string;
+  services: Awaited<ReturnType<typeof getCollection<'services'>>>;
+}
+
+const { category, services } = Astro.props;
+
+const categoryLabels: Record<string, string> = {
+  avtoelektrika: 'Автоэлектрика',
+  diagnostics: 'Диагностика',
+  kuzov: 'Кузовной ремонт',
+  other: 'Прочие услуги',
+  services: 'Дополнительные услуги',
+  shinomontazh: 'Шиномонтаж',
+  turbin: 'Ремонт турбин',
+  slesarnye: 'Слесарные работы',
+  evakuator: 'Эвакуатор',
+  geo: 'Эвакуатор по районам',
+};
+
+const label = categoryLabels[category] || category;
+
+// Strip " в Минске" from service titles in the listing — cleaner in a grid.
+// Full title with "в Минске" stays on the individual service page.
+const cleanTitle = (title: string) => title.replace(/\s+в Минске\s*$/i, '').trim();
+---
+
+<BaseLayout
+  title={`${label} — Автосервис «Ржавый Гараж»`}
+  metaTitle={`${label} в Минске — Ржавый Гараж`}
+  description={`${label} в Минске. Все марки авто. Опытные мастера. ☎ +375 29 373-71-61`}
+>
+  <div class="max-w-5xl mx-auto px-4 py-8">
+    <!-- Breadcrumbs -->
+    <nav class="text-sm text-garage-muted mb-6">
+      <a href="/" class="hover:text-garage-red">Главная</a>
+      <span class="mx-2">/</span>
+      <a href="/uslugi" class="hover:text-garage-red">Услуги</a>
+      <span class="mx-2">/</span>
+      <span class="text-garage-light">{label}</span>
+    </nav>
+
+    <h1 class="mb-8">{label}</h1>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {services.map((s) => (
+        <a
+          href={`/uslugi/${s.data.slug}`}
+          class="card-brutal no-underline hover:border-garage-red transition-colors"
+        >
+          <h3 class="text-garage-red text-lg mb-1">{cleanTitle(s.data.title)}</h3>
+          <p class="text-garage-muted text-sm mb-2">
+            {s.data.description.slice(0, 120)}...
+          </p>
+          {s.data.priceFrom && (
+            <p class="text-garage-red font-heading font-bold">{s.data.priceFrom}</p>
+          )}
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <!-- Mini FAQ -->
+  <MiniFaq
+    topic={label.toLowerCase()}
+    categorySlug={category}
+    categoryLabel={label}
+  />
+
+  <CtaBanner
+    title={`Закажите ${label.toLowerCase()} прямо сейчас`}
+    text="Звоните — бесплатно проконсультируем и назовём точную цену. Работаем без выходных."
+    phone="+375293737161"
+  />
+</BaseLayout>

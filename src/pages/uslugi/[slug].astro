@@ -1,0 +1,212 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import CtaBanner from '../../components/CtaBanner.astro';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  return services.map((service) => ({
+    params: { slug: service.data.slug },
+    props: { service },
+  }));
+}
+
+interface Props {
+  service: CollectionEntry<'services'>;
+}
+
+const { service } = Astro.props;
+const { Content } = await render(service);
+const { data } = service;
+
+// Get related services
+const allServices = await getCollection('services');
+const related = data.relatedServices
+  .map((slug) => allServices.find((s) => s.data.slug === slug))
+  .filter(Boolean);
+
+// Category labels
+const categoryLabels: Record<string, string> = {
+  avtoelektrika: 'Автоэлектрика',
+  diagnostics: 'Диагностика',
+  kuzov: 'Кузовной ремонт',
+  other: 'Прочие услуги',
+  services: 'Услуги',
+  shinomontazh: 'Шиномонтаж',
+  turbin: 'Ремонт турбин',
+  slesarnye: 'Слесарные работы',
+  evakuator: 'Эвакуатор',
+  geo: 'Эвакуатор по районам',
+};
+---
+
+<BaseLayout
+  title={data.title}
+  metaTitle={data.metaTitle}
+  description={data.description}
+  image={data.image}
+>
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Breadcrumbs -->
+    <nav class="text-sm text-garage-muted mb-6">
+      <a href="/" class="hover:text-garage-red">Главная</a>
+      <span class="mx-2">/</span>
+      <a href="/uslugi" class="hover:text-garage-red">Услуги</a>
+      <span class="mx-2">/</span>
+      <a href={`/kategoriya/${data.category}`} class="hover:text-garage-red">
+        {categoryLabels[data.category]}
+      </a>
+      <span class="mx-2">/</span>
+      <span class="text-garage-light">{data.title}</span>
+    </nav>
+
+    <!-- Hero -->
+    <div class="grid md:grid-cols-2 gap-8 mb-8">
+      <div>
+        <h1 class="mb-4">{data.title}</h1>
+        {data.priceFrom && (
+          <div class="text-2xl font-heading font-bold text-garage-red mb-2">
+            {data.priceFrom}
+          </div>
+        )}
+        {data.executionTime && (
+          <div class="text-garage-muted mb-4">{data.executionTime}</div>
+        )}
+        <a href="tel:+375293737161" class="btn-brutal">
+          ☎ Позвонить
+        </a>
+      </div>
+      <div class="border-2 border-garage-light/10 shadow-brutal-sm overflow-hidden">
+        <img
+          src={data.image}
+          alt={data.title}
+          class="w-full h-[340px] object-cover"
+          loading="eager"
+        />
+      </div>
+    </div>
+
+    <!-- Content -->
+    <article class="prose prose-invert prose-garage max-w-none prose-headings:font-heading prose-headings:uppercase prose-h2:text-garage-red prose-a:text-garage-red prose-strong:text-garage-light prose-table:overflow-x-auto prose-th:text-garage-red prose-th:border-garage-red prose-td:border-garage-gray" data-article>
+      <Content />
+    </article>
+
+    <!-- Related services -->
+    {related.length > 0 && (
+      <section class="section-brutal mt-12">
+        <h2>Похожие услуги</h2>
+        <div class="grid md:grid-cols-3 gap-4 mt-6">
+          {related.map((s) => s && (
+            <a href={`/uslugi/${s.data.slug}`} class="card-brutal no-underline hover:border-garage-red transition-colors">
+              <h3 class="text-garage-red text-lg mb-2">{s.data.title.replace(/\s+в Минске\s*$/i, '').trim()}</h3>
+              {s.data.priceFrom && (
+                <p class="text-garage-muted text-sm">{s.data.priceFrom}</p>
+              )}
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+  </div>
+
+  <!-- CTA -->
+  <CtaBanner
+    title="Нужна помощь?"
+    text="Звоните прямо сейчас — бесплатно проконсультируем и назовём цену. Работаем без выходных."
+    phone="+375293737161"
+  />
+
+  <script>
+    // Convert markdown FAQ section (## Часто задаваемые вопросы + ### Q + p A)
+    // into an accordion, matching the tq-acc pattern from FaqAccordion.astro
+    document.querySelectorAll('[data-article]').forEach((article) => {
+      const headings = Array.from(article.querySelectorAll('h2, h3, h4'));
+      const faqH2 = headings.find((h) => h.tagName === 'H2' && /часто задаваем/i.test(h.textContent || ''));
+      if (!faqH2) return;
+
+      // Collect h3 (question) + following elements (answer) until next h2.
+      // Track all original elements so we can remove them after building the accordion.
+      const items: { q: string; a: HTMLElement[]; h3: HTMLElement }[] = [];
+      const toRemove: HTMLElement[] = [];
+      let el = faqH2.nextElementSibling as HTMLElement | null;
+      let current: { q: string; a: HTMLElement[]; h3: HTMLElement } | null = null;
+
+      while (el) {
+        if (el.tagName === 'H2') break; // next section
+        if (el.tagName === 'H3') {
+          if (current) items.push(current);
+          current = { q: el.textContent || '', a: [], h3: el };
+          toRemove.push(el); // only h3 (questions) need explicit removal
+        } else if (current) {
+          current.a.push(el);
+          // answer elements are moved via appendChild below — don't add to toRemove
+        }
+        el = el.nextElementSibling as HTMLElement | null;
+      }
+      if (current) items.push(current);
+      if (items.length === 0) return;
+
+      // Build heading: "Частые вопросы про {article title}"
+      const titleEl = document.querySelector('h1');
+      const articleTitle = titleEl?.textContent?.trim() || '';
+      const heading = document.createElement('h2');
+      heading.textContent = articleTitle
+        ? `Частые вопросы про ${articleTitle.toLowerCase().replace(/\s+в минске.*$/i, '').replace(/\s+—.*$/, '')}`
+        : 'Частые вопросы';
+
+      // Build accordion
+      const acc = document.createElement('div');
+      acc.className = 'tq-acc';
+      acc.setAttribute('data-acc', '');
+
+      items.forEach((item) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'tq-acc-item';
+        itemDiv.setAttribute('data-acc-item', '');
+
+        const btn = document.createElement('button');
+        btn.className = 'tq-acc-q';
+        btn.setAttribute('data-acc-q', '');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.textContent = item.q;
+
+        const ans = document.createElement('div');
+        ans.className = 'tq-acc-a';
+        item.a.forEach((node) => ans.appendChild(node));
+
+        itemDiv.appendChild(btn);
+        itemDiv.appendChild(ans);
+        acc.appendChild(itemDiv);
+      });
+
+      // Insert heading + accordion before the original h2
+      const parent = faqH2.parentNode;
+      if (parent) {
+        parent.insertBefore(heading, faqH2);
+        parent.insertBefore(acc, faqH2);
+      }
+
+      // Remove original h2 and all collected h3/answer elements
+      faqH2.remove();
+      toRemove.forEach((node) => node.remove());
+
+      // Wire up click handlers
+      acc.querySelectorAll('[data-acc-q]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('[data-acc-item]');
+          const isOpen = item?.classList.contains('open');
+          acc.querySelectorAll('[data-acc-item]').forEach((it) => {
+            it.classList.remove('open');
+            it.querySelector('[data-acc-q]')?.setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item?.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    });
+  </script>
+</BaseLayout>
