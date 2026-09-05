@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "avtoelektrika",
+        "diagnostics",
+        "kuzov",
+        "other",
+        "services",
+        "shinomontazh",
+        "turbin",
+        "slesarnye",
+        "evakuator",
+        "geo"
+      ]
+    },
+    "image": {
+      "type": "string"
+    },
+    "priceFrom": {
+      "type": "string"
+    },
+    "executionTime": {
+      "type": "string"
+    },
+    "featured": {
+      "default": false,
+      "type": "boolean"
+    },
+    "relatedServices": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "metaTitle",
+    "description",
+    "slug",
+    "category",
+    "image"
+  ]
+}
