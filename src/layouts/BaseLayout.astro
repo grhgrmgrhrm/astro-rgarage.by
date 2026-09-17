@@ -11,6 +11,7 @@ interface Props {
 
 const { title, metaTitle, description, image } = Astro.props;
 const pageTitle = metaTitle || title;
+const base = import.meta.env.BASE_URL;
 const ogImage = image ? new URL(image, Astro.site) : undefined;
 ---
 
@@ -19,7 +20,7 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="icon" type="image/png" href={base + 'images/favicon.png'} />
   <title>{pageTitle}</title>
   {description && <meta name="description" content={description} />}
 
@@ -50,7 +51,7 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
         </a>
       </div>
       <div class="flex gap-4 items-center">
-        <span class="hidden sm:inline">🕐 ПН–ВС 08:00–20:00</span>
+        <span class="hidden sm:inline">🕐 ПН–ПТ 09:00–18:00</span>
         <a href="tel:+375293737161" class="text-garage-red font-semibold no-underline">☎ +375 29 373-71-61</a>
       </div>
     </div>
@@ -59,15 +60,15 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
   <!-- Header -->
   <header class="bg-garage-black border-b-4 border-garage-red sticky top-0 z-50" data-header>
     <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-2 no-underline" aria-label="Ржавый Гараж — на главную">
-        <img src="/images/logo.png" alt="Автосервис Ржавый Гараж" class="h-12 w-auto" />
+      <a href={base} class="flex items-center gap-2 no-underline" aria-label="Ржавый Гараж — на главную">
+        <img src={base + 'images/logo.png'} alt="Автосервис Ржавый Гараж" class="h-12 w-auto" />
       </a>
       <nav class="hidden md:flex gap-6 items-center" data-nav>
-        <a href="/uslugi" class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Услуги</a>
-        <a href="/uslugi/evakuator-v-minske" class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Эвакуатор</a>
-        <a href="/for-business" class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Юридическим лицам</a>
-        <a href="/faq" class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Вопросы</a>
-        <a href="/kontakty" class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Контакты</a>
+        <a href={base + 'uslugi'} class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Услуги</a>
+        <a href={base + 'uslugi/evakuator-v-minske'} class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Эвакуатор</a>
+        <a href={base + 'for-business'} class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Юридическим лицам</a>
+        <a href={base + 'faq'} class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Вопросы</a>
+        <a href={base + 'kontakty'} class="text-garage-light hover:text-garage-red no-underline font-heading uppercase text-sm">Контакты</a>
       </nav>
       <div class="flex items-center gap-2">
         <a href="tel:+375293737161" class="btn-brutal text-sm hidden sm:inline-block">
@@ -104,7 +105,7 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
         aria-label="Мобильное меню"
       >
         <div class="flex items-center justify-between px-5 py-4 border-b border-garage-gray">
-          <img src="/images/logo.png" alt="Ржавый Гараж" class="h-10 w-auto" />
+          <img src={base + 'images/logo.png'} alt="Ржавый Гараж" class="h-10 w-auto" />
           <button
             class="w-10 h-10 flex items-center justify-center text-garage-light hover:text-garage-red text-2xl border-2 border-garage-light/20 hover:border-garage-red transition-colors"
             data-nav-close
@@ -112,18 +113,18 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
           >×</button>
         </div>
         <div class="flex flex-col">
-          <a href="/uslugi" class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Услуги</a>
-          <a href="/uslugi/evakuator-v-minske" class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Эвакуатор</a>
-          <a href="/for-business" class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Юридическим лицам</a>
-          <a href="/faq" class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Вопросы и ответы</a>
-          <a href="/kontakty" class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Контакты</a>
+          <a href={base + 'uslugi'} class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Услуги</a>
+          <a href={base + 'uslugi/evakuator-v-minske'} class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Эвакуатор</a>
+          <a href={base + 'for-business'} class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Юридическим лицам</a>
+          <a href={base + 'faq'} class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Вопросы и ответы</a>
+          <a href={base + 'kontakty'} class="px-5 py-4 text-garage-light hover:text-garage-red hover:bg-garage-gray no-underline font-heading uppercase border-b border-garage-gray/50" data-nav-link>Контакты</a>
         </div>
         <div class="p-5 mt-2">
           <a href="tel:+375293737161" class="btn-brutal w-full text-center block">
             ☎ +375 29 373-71-61
           </a>
           <div class="mt-4 text-sm text-garage-muted space-y-1">
-            <p>🕐 ПН–ВС 08:00–20:00</p>
+            <p>🕐 ПН–ПТ 09:00–18:00</p>
             <p>📍 Минск, Передовая ул., 6/12</p>
             <div class="flex gap-3 pt-2">
               <a href="https://www.instagram.com/rgarage_cto/" target="_blank" rel="noopener" class="text-garage-light hover:text-garage-red no-underline" aria-label="Instagram">Instagram</a>
@@ -144,7 +145,7 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
   <footer class="bg-garage-black border-t-4 border-garage-red mt-16">
     <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
       <div>
-        <img src="/images/logo.png" alt="Ржавый Гараж" class="h-12 w-auto mb-4" />
+        <img src={base + 'images/logo.png'} alt="Ржавый Гараж" class="h-12 w-auto mb-4" />
         <p class="text-garage-muted text-sm">
           Ремонт, диагностика, эвакуация автомобилей в Минске и Минской области.
           Работаем с любыми марками авто.
@@ -155,16 +156,16 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
         <ul class="space-y-2 text-sm text-garage-light">
           <li>☎ <a href="tel:+375293737161">+375 29 373-71-61</a></li>
           <li>📍 Беларусь, Минск, Передовая ул., д. 6, корп. 12</li>
-          <li>🕐 ПН–ВС 08:00–20:00</li>
+          <li>🕐 ПН–ПТ 09:00–18:00</li>
         </ul>
       </div>
       <div>
         <h3 class="text-garage-red mb-4">Услуги</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/uslugi/evakuator-v-minske">Эвакуатор</a></li>
-          <li><a href="/kategoriya/slesarnye">Слесарные работы</a></li>
-          <li><a href="/kategoriya/diagnostics">Диагностика</a></li>
-          <li><a href="/kategoriya/avtoelektrika">Автоэлектрика</a></li>
+          <li><a href={base + 'uslugi/evakuator-v-minske'}>Эвакуатор</a></li>
+          <li><a href={base + 'kategoriya/slesarnye'}>Слесарные работы</a></li>
+          <li><a href={base + 'kategoriya/diagnostics'}>Диагностика</a></li>
+          <li><a href={base + 'kategoriya/avtoelektrika'}>Автоэлектрика</a></li>
         </ul>
       </div>
       <div>
@@ -177,7 +178,7 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2m3.07 14.27h-1.46c-.55 0-.72-.44-1.71-1.43-.86-.83-1.24-.94-1.45-.94-.3 0-.39.08-.39.5v1.31c0 .36-.12.58-1.07.58-1.58 0-3.32-.96-4.55-2.74-1.85-2.59-2.35-4.54-2.35-4.94 0-.22.08-.42.5-.42h1.46c.37 0 .51.17.65.57.72 2.08 1.92 3.9 2.42 3.9.19 0 .27-.08.27-.56V10.1c-.06-.99-.58-1.07-.58-1.42 0-.17.14-.34.36-.34h2.3c.31 0 .42.17.42.54v2.89c0 .31.14.42.22.42.19 0 .35-.11.7-.46 1.08-1.21 1.85-3.07 1.85-3.07.1-.22.28-.42.65-.42h1.46c.44 0 .53.22.44.54-.18.84-1.95 3.34-1.95 3.34-.15.25-.21.36 0 .64.15.21.65.64.98 1.02.61.69 1.08 1.28 1.21 1.68.13.4-.08.6-.49.6"/></svg>
           </a>
         </div>
-        <a href="/for-business" class="text-sm text-garage-light hover:text-garage-red no-underline">Юридическим лицам →</a>
+        <a href={base + 'for-business'} class="text-sm text-garage-light hover:text-garage-red no-underline">Юридическим лицам →</a>
       </div>
     </div>
     <div class="border-t border-garage-gray py-4 text-center text-garage-muted text-xs">

@@ -4,7 +4,8 @@ import mdx from '@astrojs/mdx';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://rgarage.by',
+  site: 'https://grhgrmgrhrm.github.io',
+  base: '/astro-rgarage.by/',
   integrations: [
     sitemap(),
     mdx(),

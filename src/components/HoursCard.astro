@@ -4,13 +4,13 @@
  * Shows opening hours with live open/closed pill.
  */
 const days = [
-  { ru: 'Понедельник', short: 'ПН', open: '08:00', close: '20:00' },
-  { ru: 'Вторник', short: 'ВТ', open: '08:00', close: '20:00' },
-  { ru: 'Среда', short: 'СР', open: '08:00', close: '20:00' },
-  { ru: 'Четверг', short: 'ЧТ', open: '08:00', close: '20:00' },
-  { ru: 'Пятница', short: 'ПТ', open: '08:00', close: '20:00' },
-  { ru: 'Суббота', short: 'СБ', open: '08:00', close: '20:00' },
-  { ru: 'Воскресенье', short: 'ВС', open: '08:00', close: '20:00' },
+  { ru: 'Понедельник', short: 'ПН', open: '09:00', close: '18:00' },
+  { ru: 'Вторник', short: 'ВТ', open: '09:00', close: '18:00' },
+  { ru: 'Среда', short: 'СР', open: '09:00', close: '18:00' },
+  { ru: 'Четверг', short: 'ЧТ', open: '09:00', close: '18:00' },
+  { ru: 'Пятница', short: 'ПТ', open: '09:00', close: '18:00' },
+  { ru: 'Суббота', short: 'СБ', open: null, close: null },
+  { ru: 'Воскресенье', short: 'ВС', open: null, close: null },
 ];
 const today = new Date().getDay(); // 0=Sun
 const todayIdx = today === 0 ? 6 : today - 1;
@@ -25,12 +25,12 @@ const todayIdx = today === 0 ? 6 : today - 1;
     {days.map((d, i) => (
       <tr class:list={{ today: i === todayIdx }}>
         <td>{d.ru}</td>
-        <td>{d.open}–{d.close}</td>
+        <td>{d.open ? `${d.open}–${d.close}` : 'Выходной'}</td>
       </tr>
     ))}
   </table>
   <div class="tq-hours-foot">
-    Без выходных. Возможны выезды эвакуатора вне рабочего времени по договорённости.
+    ПН–ПТ 09:00–18:00. Суббота и воскресенье — выходные. Эвакуатор доступен вне рабочего времени по договорённости.
   </div>
 </div>
 
@@ -41,18 +41,19 @@ const todayIdx = today === 0 ? 6 : today - 1;
     const now = new Date();
     const day = now.getDay(); // 0=Sun
     const idx = day === 0 ? 6 : day - 1;
+    // ПН–ПТ 09:00–18:00, СБ–ВС закрыто
     const hours = [
-      { open: 480, close: 1200 }, // ПН 08:00–20:00
-      { open: 480, close: 1200 },
-      { open: 480, close: 1200 },
-      { open: 480, close: 1200 },
-      { open: 480, close: 1200 },
-      { open: 480, close: 1200 },
-      { open: 480, close: 1200 },
+      { open: 540, close: 1080 },  // ПН 09:00–18:00
+      { open: 540, close: 1080 },  // ВТ
+      { open: 540, close: 1080 },  // СР
+      { open: 540, close: 1080 },  // ЧТ
+      { open: 540, close: 1080 },  // ПТ
+      { open: null, close: null }, // СБ
+      { open: null, close: null }, // ВС
     ];
     const cur = now.getHours() * 60 + now.getMinutes();
     const span = hours[idx];
-    const isOpen = cur >= span.open && cur < span.close;
+    const isOpen = span.open !== null && cur >= span.open && cur < span.close;
     if (isOpen) {
       pill.textContent = 'Сейчас открыто';
       pill.classList.remove('closed');

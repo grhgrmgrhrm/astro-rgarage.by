@@ -9,6 +9,7 @@ import CtaBanner from '../components/CtaBanner.astro';
 import HoursCard from '../components/HoursCard.astro';
 
 const services = await getCollection('services');
+const base = import.meta.env.BASE_URL;
 const featured = services.filter((s) => s.data.featured).slice(0, 6);
 
 const categories = [
@@ -45,11 +46,10 @@ const categories = [
     ],
   },
   {
-    slug: 'kuzov', name: 'Кузовной ремонт', image: '/images/services/car-painting.jpg',
+    slug: 'kitajskie', name: 'Китайские авто', image: '/images/services/car-engine-diagnostic.jpg',
     popular: [
-      { slug: 'polirovka-pokraska-avto', title: 'Полировка и покраска' },
-      { slug: 'antikorrozijnaya-obrabotka-avtomobilya', title: 'Антикоррозийная обработка' },
-      { slug: 'podbor-avtoemalej', title: 'Подбор автоэмалей' },
+      { slug: 'obsluzhivanie-kitajskih-avtomobilej', title: 'Обслуживание и ремонт' },
+      { slug: 'zapchasti-dlya-kitajskih-avtomobilej', title: 'Запчасти для китайских авто' },
     ],
   },
   {
@@ -75,7 +75,7 @@ const categories = [
 ];
 
 const featuredCards = featured.map((s) => ({
-  href: `/uslugi/${s.data.slug}`,
+  href: `${base}uslugi/${s.data.slug}`,
   title: s.data.title.replace(/\s+в Минске\s*$/i, '').trim(),
   desc: s.data.description.slice(0, 100),
   price: s.data.priceFrom,
@@ -112,11 +112,11 @@ const testimonials = [
 <BaseLayout
   title="Автосервис «Ржавый Гараж» в Минске"
   metaTitle="Автосервис «Ржавый Гараж» в Минске — ремонт, диагностика, эвакуатор 24/7"
-  description="Автосервис в Минске: ремонт, диагностика, эвакуация. Все марки авто. Слесарные работы, кузовной ремонт, автоэлектрика. ☎ +375 29 373-71-61"
+  description="Автосервис в Минске: ремонт, диагностика, эвакуация. Все марки авто. Слесарные работы, диагностика, автоэлектрика, китайские авто. ☎ +375 29 373-71-61"
 >
   <!-- Hero -->
   <section class="tq-hero">
-    <img src="/images/sto.jpg" alt="Автосервис Ржавый Гараж" class="absolute inset-0 w-full h-full object-cover" />
+    <img src={base + 'images/sto.jpg'} alt="Автосервис Ржавый Гараж" class="absolute inset-0 w-full h-full object-cover" />
     <div class="tq-scrim"></div>
     <div class="tq-hero-inner">
       <div class="tq-wrap">
@@ -127,7 +127,7 @@ const testimonials = [
         </h1>
         <div class="tq-cta-row">
           <a href="tel:+375293737161" class="tq-btn">☎ +375 29 373-71-61</a>
-          <a href="/uslugi" class="tq-btn ghost on-dark">Все услуги</a>
+          <a href={base + 'uslugi'} class="tq-btn ghost on-dark">Все услуги</a>
         </div>
         <div class="tq-trust-strip">
           <span class="dot"></span><span>Гарантия на работы</span>
@@ -153,11 +153,11 @@ const testimonials = [
         {categories.map((cat) => (
           <div class="cat-card group relative overflow-hidden border-2 border-garage-light/10 shadow-brutal-sm hover:border-garage-red transition-colors flex flex-col">
             <a
-              href={`/kategoriya/${cat.slug}`}
+              href={`${base}kategoriya/${cat.slug}`}
               class="relative overflow-hidden block no-underline"
             >
               <img
-                src={cat.image}
+                src={base + cat.image.replace(/^\//, '')}
                 alt={cat.name}
                 class="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
@@ -168,7 +168,7 @@ const testimonials = [
             <ul class="cat-card-list bg-garage-gray p-3 space-y-1 flex-1">
               {cat.popular.map((svc) => (
                 <li>
-                  <a href={`/uslugi/${svc.slug}`} class="no-underline">
+                  <a href={`${base}uslugi/${svc.slug}`} class="no-underline">
                     <h4 class="text-garage-light hover:text-garage-red text-xs font-body font-normal normal-case tracking-normal leading-snug transition-colors">
                       {svc.title}
                     </h4>
@@ -204,7 +204,7 @@ const testimonials = [
   <!-- CTA -->
   <CtaBanner
     title="Нужна помощь с авто?"
-    text="Звоните прямо сейчас — бесплатно проконсультируем и назовём цену. Работаем без выходных."
+    text="Звоните — бесплатно проконсультируем и назовём цену. Работаем ПН–ПТ 09:00–18:00."
     phone="+375293737161"
   />
 

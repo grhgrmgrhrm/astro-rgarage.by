@@ -11,7 +11,7 @@ const services = defineCollection({
     category: z.enum([
       'avtoelektrika',
       'diagnostics',
-      'kuzov',
+      'kitajskie',
       'other',
       'services',
       'shinomontazh',

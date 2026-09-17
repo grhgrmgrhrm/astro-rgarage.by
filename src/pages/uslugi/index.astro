@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import CtaBanner from '../../components/CtaBanner.astro';
 
 const services = await getCollection('services');
+const base = import.meta.env.BASE_URL;
 
 // Group by category
 const categories: Record<string, { name: string; services: typeof services }> = {
@@ -11,7 +12,7 @@ const categories: Record<string, { name: string; services: typeof services }> = 
   diagnostics: { name: 'Диагностика', services: [] },
   evakuator: { name: 'Эвакуатор', services: [] },
   avtoelektrika: { name: 'Автоэлектрика', services: [] },
-  kuzov: { name: 'Кузовной ремонт', services: [] },
+  kitajskie: { name: 'Китайские автомобили', services: [] },
   shinomontazh: { name: 'Шиномонтаж', services: [] },
   turbin: { name: 'Ремонт турбин', services: [] },
   services: { name: 'Дополнительные услуги', services: [] },
@@ -33,7 +34,7 @@ const cleanTitle = (title: string) => title.replace(/\s+в Минске\s*$/i, '
 <BaseLayout
   title="Все услуги — Автосервис «Ржавый Гараж»"
   metaTitle="Все услуги автосервиса в Минске — Ржавый Гараж"
-  description="Полный список услуг автосервиса: слесарные работы, диагностика, эвакуатор, кузовной ремонт, автоэлектрика. ☎ +375 29 373-71-61"
+  description="Полный список услуг автосервиса: слесарные работы, диагностика, эвакуатор, автоэлектрика, китайские авто. ☎ +375 29 373-71-61"
 >
   <div class="max-w-5xl mx-auto px-4 py-8">
     <h1 class="mb-8">Все услуги</h1>
@@ -43,13 +44,13 @@ const cleanTitle = (title: string) => title.replace(/\s+в Минске\s*$/i, '
       .map(([slug, data]) => (
         <section class="section-brutal">
           <h2>
-            <a href={`/kategoriya/${slug}`} class="no-underline">{data.name}</a>
+            <a href={`${base}kategoriya/${slug}`} class="no-underline">{data.name}</a>
             <span class="text-garage-muted text-lg font-body normal-case"> ({data.services.length})</span>
           </h2>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
             {data.services.map((s) => (
               <a
-                href={`/uslugi/${s.data.slug}`}
+                href={`${base}uslugi/${s.data.slug}`}
                 class="card-brutal no-underline hover:border-garage-red transition-colors"
               >
                 <h3 class="text-garage-red text-lg mb-1">{cleanTitle(s.data.title)}</h3>

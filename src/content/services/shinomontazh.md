@@ -10,7 +10,6 @@ executionTime: "от 20 минут"
 featured: false
 relatedServices:
   - diagnostika-podveski
-  - razval-shozhdenie
   - diagnostika-i-remont-tormoznoj-sistemy-protochka-tormoznyh-diskov
 ---
 
@@ -107,4 +106,4 @@ relatedServices:
 
 ---
 
-**СТО «Ржавый Гараж»** — Беларусь, Минск, Передовая ул., д. 6, корп. 12. ПН–ВС 08:00–20:00. ☎ +375 29 373-71-61.
+**СТО «Ржавый Гараж»** — Беларусь, Минск, Передовая ул., д. 6, корп. 12. ПН–ПТ 09:00–18:00. ☎ +375 29 373-71-61.

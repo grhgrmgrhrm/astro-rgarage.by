@@ -39,7 +39,7 @@ relatedServices:
 
 ### Масло можно купить у нас
 
-У нас в наличии оригинальные моторные масла всех брендов: Ford, Elf, Castrol, Mobil, Shell, Total, Liqui Moly, ZIC, Lukoil. См. [моторные масла](/uslugi/originalnye-masla-po-samym-nizkim-cenam).
+У нас в наличии оригинальные моторные масла всех брендов: Ford, Elf, Castrol, Mobil, Shell, Total, Liqui Moly, ZIC, Lukoil. См. [моторные масла](../originalnye-masla-po-samym-nizkim-cenam).
 
 ## Замена масла в АКПП
 
@@ -104,4 +104,4 @@ relatedServices:
 
 ---
 
-**СТО «Ржавый Гараж»** — Беларусь, Минск, Передовая ул., д. 6, корп. 12. ПН–ВС 08:00–20:00. ☎ +375 29 373-71-61.
+**СТО «Ржавый Гараж»** — Беларусь, Минск, Передовая ул., д. 6, корп. 12. ПН–ПТ 09:00–18:00. ☎ +375 29 373-71-61.

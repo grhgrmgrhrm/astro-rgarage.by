@@ -5,7 +5,7 @@ description: "Проверка автомобиля перед покупкой 
 slug: "proverka-avto-pered-pokupkoj"
 category: "services"
 image: "/images/services/car-engine-diagnostic.jpg"
-priceFrom: "от 50 BYN"
+priceFrom: "от 70 BYN"
 executionTime: "от 1,5 часов"
 featured: true
 relatedServices:
@@ -107,4 +107,4 @@ relatedServices:
 
 ---
 
-**СТО «Ржавый Гараж»** — Беларусь, Минск, Передовая ул., д. 6, корп. 12. ПН–ВС 08:00–20:00. ☎ +375 29 373-71-61.
+**СТО «Ржавый Гараж»** — Беларусь, Минск, Передовая ул., д. 6, корп. 12. ПН–ПТ 09:00–18:00. ☎ +375 29 373-71-61.
