@@ -1,0 +1,41 @@
+# ============================================
+# rgarage.by — .htaccess
+# 301-редиректы: старые URL Joomla → новые URL Astro
+#
+# ВАЖНО: работает только на Apache-хостинге.
+# GitHub Pages игнорирует .htaccess — файл безвреден.
+# ============================================
+
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# --- HTTPS + канонический домен (без www) ---
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.rgarage\.by$ [NC]
+RewriteRule ^(.*)$ https://rgarage.by/$1 [R=301,L]
+
+# --- Точечные страницы Joomla ---
+RewriteRule ^contact/?$ /kontakty/ [R=301,L]
+RewriteRule ^our-clients-feedback/?$ / [R=301,L]
+RewriteRule ^2019-05-12-11-55-23(/.*)?$ / [R=301,L]
+RewriteRule ^component/.*$ / [R=301,L]
+RewriteRule ^remont-turbin/?$ /uslugi/remont-turbin/ [R=301,L]
+
+# --- Удалённые услуги → ближайший аналог ---
+RewriteRule ^autoservice/(antikorrozijnaya-obrabotka-avtomobilya|polirovka-pokraska-avto|podbor-avtoemalej|razval-shozhdenie|ustanovka-i-podklyuchenie-farkopa|sar-catalog)/?$ /uslugi/ [R=301,L]
+RewriteRule ^autoservice/evakuaciya-parketnikov-i-dzhipov/?$ /uslugi/evakuator-v-minske/ [R=301,L]
+
+# --- Общее правило: /autoservice/{slug} → /uslugi/{slug} ---
+RewriteRule ^autoservice/?$ /uslugi/ [R=301,L]
+RewriteRule ^autoservice/(.+)$ /uslugi/$1 [R=301,L]
+
+# --- Joomla index.php?option=... → главная ---
+RewriteCond %{QUERY_STRING} ^option=
+RewriteRule ^index\.php$ /? [R=301,L]
+
+</IfModule>
