@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import CtaBanner from '../../components/CtaBanner.astro';
+import GoogleSourceButton from '../../components/GoogleSourceButton.astro';
 
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -92,6 +93,10 @@ const categoryLabels: Record<string, string> = {
     <article class="prose prose-invert prose-garage max-w-none prose-headings:font-heading prose-headings:uppercase prose-h2:text-garage-red prose-a:text-garage-red prose-strong:text-garage-light prose-table:overflow-x-auto prose-th:text-garage-red prose-th:border-garage-red prose-td:border-garage-gray" data-article>
       <Content />
     </article>
+
+    <div class="mt-8">
+      <GoogleSourceButton pageUrl={`https://rgarage.by/uslugi/${data.slug}`} compact />
+    </div>
 
     <!-- Related services -->
     {related.length > 0 && (

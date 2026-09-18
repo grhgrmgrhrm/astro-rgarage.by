@@ -1,0 +1,29 @@
+---
+interface Props {
+  pageUrl?: string;
+  compact?: boolean;
+}
+const { pageUrl, compact = false } = Astro.props;
+const source = pageUrl ?? 'https://rgarage.by';
+const href = `https://google.com/preferences/source?q=${encodeURIComponent(source)}`;
+---
+
+<a
+  href={href}
+  target="_blank"
+  rel="noopener"
+  class:list={[
+    'inline-flex items-center gap-2 border transition-colors no-underline',
+    compact
+      ? 'px-3 py-1.5 text-xs border-garage-light/20 text-garage-light/60 hover:border-garage-red hover:text-garage-red'
+      : 'px-4 py-2.5 text-sm border-garage-light/25 text-garage-light hover:border-garage-red hover:text-garage-red font-heading uppercase',
+  ]}
+>
+  <svg viewBox="0 0 24 24" width={compact ? 14 : 16} height={compact ? 14 : 16} aria-hidden="true" class="shrink-0">
+    <path fill="#4285F4" d="M23.5 12.27c0-.85-.08-1.66-.22-2.45H12v4.64h6.46a5.52 5.52 0 0 1-2.39 3.62v3h3.86c2.26-2.09 3.57-5.17 3.57-8.81z"/>
+    <path fill="#34A853" d="M12 24c3.24 0 5.96-1.07 7.94-2.91l-3.86-3c-1.07.72-2.44 1.15-4.08 1.15-3.14 0-5.8-2.12-6.75-4.97H1.27v3.09A11.99 11.99 0 0 0 12 24z"/>
+    <path fill="#FBBC05" d="M5.25 14.27A7.2 7.2 0 0 1 4.87 12c0-.79.14-1.55.38-2.27V6.64H1.27a12 12 0 0 0 0 10.72l3.98-3.09z"/>
+    <path fill="#EA4335" d="M12 4.77c1.76 0 3.34.61 4.59 1.8l3.42-3.42A11.5 11.5 0 0 0 12 0 11.99 11.99 0 0 0 1.27 6.64l3.98 3.09C6.2 6.89 8.86 4.77 12 4.77z"/>
+  </svg>
+  <span>Добавить в основные источники Google</span>
+</a>

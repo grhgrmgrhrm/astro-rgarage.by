@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import GoogleSourceButton from '../../components/GoogleSourceButton.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -105,8 +106,9 @@ const schemas = [articleSchema, breadcrumbSchema, faqSchema].filter(Boolean);
         <Content />
       </div>
 
-      <div class="mt-8 pt-8 border-t border-garage-red/30">
+      <div class="mt-8 pt-8 border-t border-garage-red/30 flex flex-wrap items-center justify-between gap-4">
         <a href={base + 'news'} class="text-garage-red font-heading uppercase text-sm hover:text-garage-light no-underline">← Все новости</a>
+        <GoogleSourceButton pageUrl={articleUrl} compact />
       </div>
     </div>
   </article>
