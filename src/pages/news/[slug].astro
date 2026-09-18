@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const news = await getCollection('news');
+  return news.map((item) => ({
+    params: { slug: item.data.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const { Content } = await render(item);
+const { data } = item;
+const base = import.meta.env.BASE_URL;
+const site = 'https://rgarage.by';
+const articleUrl = `${site}/news/${data.slug}`;
+
+// Парсим FAQ из markdown-контента (### вопрос → ответ)
+const rawBody = item.body || '';
+const faqItems: { question: string; answer: string }[] = [];
+const faqRegex = /^### (.+)\n\n([\s\S]*?)(?=\n### |\n## |\n$|$)/gm;
+let match;
+while ((match = faqRegex.exec(rawBody)) !== null) {
+  const question = match[1].trim();
+  const answer = match[2].trim().replace(/\n/g, ' ').replace(/\*\*\[([^\]]+)\]\([^)]+\)\*\*/g, '$1').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*/g, '');
+  if (question && answer && !question.toLowerCase().includes('контакт')) {
+    faqItems.push({ question, answer });
+  }
+}
+
+const wordCount = rawBody.split(/\s+/).length;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: data.title,
+  description: data.description,
+  datePublished: data.pubDate,
+  dateModified: data.pubDate,
+  wordCount,
+  image: data.image ? `${site}${data.image}` : `${site}/images/logo.png`,
+  author: { '@type': 'Person', name: 'Мастер-приёмщик СТО Ржавый Гараж' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'СТО Ржавый Гараж',
+    telephone: '+375 29 373-71-61',
+    logo: { '@type': 'ImageObject', url: `${site}/images/logo.png` },
+  },
+  mainEntityOfPage: articleUrl,
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Главная', item: `${site}/` },
+    { '@type': 'ListItem', position: 2, name: 'Новости', item: `${site}/news/` },
+    { '@type': 'ListItem', position: 3, name: data.title, item: articleUrl },
+  ],
+};
+
+const faqSchema = faqItems.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+} : null;
+
+const schemas = [articleSchema, breadcrumbSchema, faqSchema].filter(Boolean);
+---
+
+<BaseLayout title={data.metaTitle} description={data.description}>
+  {schemas.map((schema) => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
+  <article class="py-12 bg-garage-gray min-h-screen">
+    <div class="max-w-3xl mx-auto px-4">
+      <nav class="text-sm text-garage-light/50 mb-6">
+        <a href={base} class="hover:text-garage-red">Главная</a>
+        <span class="mx-2">/</span>
+        <a href={base + 'news'} class="hover:text-garage-red">Новости</a>
+        <span class="mx-2">/</span>
+        <span class="text-garage-light/70">{data.title}</span>
+      </nav>
+
+      <div class="flex items-center gap-3 mb-4">
+        <time class="text-garage-red text-sm font-heading uppercase">{new Date(data.pubDate).toLocaleDateString('ru-RU')}</time>
+        <span class="text-garage-light/40 text-sm">•</span>
+        <span class="text-garage-light/60 text-sm">{data.author || 'Мастер-приёмщик'}</span>
+      </div>
+      <h1 class="news-h1 font-heading uppercase mb-6">{data.title}</h1>
+
+      {data.image && (
+        <div class="mb-6 rounded overflow-hidden">
+          <img src={base + data.image.replace(/^\//, '')} alt={data.title} class="w-full h-auto" loading="lazy" />
+        </div>
+      )}
+
+      <div class="prose-news">
+        <Content />
+      </div>
+
+      <div class="mt-8 pt-8 border-t border-garage-red/30">
+        <a href={base + 'news'} class="text-garage-red font-heading uppercase text-sm hover:text-garage-light no-underline">← Все новости</a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style is:global>
+  .prose-news table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+  .prose-news th,
+  .prose-news td {
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: 1px solid #374151;
+    text-align: left;
+  }
+  .prose-news th {
+    font-weight: 700;
+    border-bottom: 2px solid #111827;
+  }
+  .prose-news h2 {
+    margin: 15px auto;
+  }
+  .news-h1 {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  @media (width >= 48rem) {
+    .news-h1 {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+</style>
