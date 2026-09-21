@@ -4,10 +4,10 @@ import mdx from '@astrojs/mdx';
 import tailwindcss from '@tailwindcss/vite';
 import { rehypeBaseLinks } from './scripts/rehype-base-links.mjs';
 
-const base = '/astro-rgarage.by/';
+const base = '/';
 
 export default defineConfig({
-  site: 'https://grhgrmgrhrm.github.io',
+  site: 'https://rgarage.by',
   base,
   integrations: [
     sitemap(),

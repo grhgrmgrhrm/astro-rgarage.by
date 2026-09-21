@@ -23,6 +23,7 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
   <link rel="icon" type="image/png" href={base + 'images/favicon.png'} />
   <title>{pageTitle}</title>
   {description && <meta name="description" content={description} />}
+  <link rel="canonical" href={Astro.url} />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />

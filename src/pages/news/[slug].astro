@@ -75,7 +75,7 @@ const faqSchema = faqItems.length > 0 ? {
 const schemas = [articleSchema, breadcrumbSchema, faqSchema].filter(Boolean);
 ---
 
-<BaseLayout title={data.metaTitle} description={data.description}>
+<BaseLayout title={data.metaTitle} description={data.description} image={data.image}>
   {schemas.map((schema) => (
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   ))}
