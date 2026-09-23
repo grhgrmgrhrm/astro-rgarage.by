@@ -4,7 +4,7 @@ metaTitle: "Диагностика двигателя в Минске — бен
 description: "Диагностика бензиновых и дизельных двигателей в Минске. Компьютерная и механическая проверка, выявление шумов, оценка систем. Звоните +375 29 373-71-61."
 slug: "diagnostika-dvigatelya"
 category: "diagnostics"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 20 BYN"
 executionTime: "от 1 часа"
 featured: false

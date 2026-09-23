@@ -4,7 +4,7 @@ metaTitle: "Слесарные работы в Минске — от 20 BYN, в�
 description: "Слесарные работы в Минске от 20 BYN. Ремонт двигателя, подвески, рулевого, тормозов, выхлопа. Все марки авто. ☎ +375 29 373-71-61."
 slug: "slesarnye-raboty-v-minske"
 pubDate: "2026-01-20"
-image: "/images/services/slesarnye-raboty-1.jpg"
+image: "/images/services/slesarnye-raboty-1.webp"
 serviceSlug: "slesarnye-raboty"
 category: "slesarnye"
 ---

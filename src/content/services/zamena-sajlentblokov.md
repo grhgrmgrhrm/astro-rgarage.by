@@ -4,7 +4,7 @@ metaTitle: "Замена сайлентблоков подвески в Минс
 description: "Замена сайлентблоков рычагов подвески в Минске. Резиновые и полиуретановые. Все марки авто. Запрессовка. Гарантия. +375 29 373-71-61."
 slug: "zamena-sajlentblokov"
 category: "slesarnye"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 20 BYN"
 executionTime: "от 1 часа"
 featured: false

@@ -4,7 +4,7 @@ metaTitle: "Ремонт ГАЗель в Минске — 35 BYN/час с НД�
 description: "Ремонт автомобилей ГАЗель в Минске по специальной цене — 35 BYN/час с НДС. Двигатель, подвеска, тормоза, электрика. Гарантия. +375 29 373-71-61."
 slug: "remont-avtomobilej-gazel-35-rublej-s-nds"
 category: "slesarnye"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 35 BYN/час"
 executionTime: "от 1 часа"
 featured: false

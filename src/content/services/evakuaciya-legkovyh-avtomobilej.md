@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор легковых авто в Минске — о�
 description: "Эвакуация легковых автомобилей в Минске. Любые марки: BMW, Audi, VW, Toyota, Kia, Hyundai. Подача от 20 минут. От 50 BYN. +375 29 373-71-61."
 slug: "evakuaciya-legkovyh-avtomobilej"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 50 BYN"
 executionTime: "подача от 20 минут"
 featured: false

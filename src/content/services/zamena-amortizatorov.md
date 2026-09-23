@@ -4,7 +4,7 @@ metaTitle: "Замена амортизаторов в Минске — пере
 description: "Замена передних и задних амортизаторов в Минске. Все марки авто, оригиналы и аналоги. Замена парами. Гарантия. +375 29 373-71-61."
 slug: "zamena-amortizatorov"
 category: "slesarnye"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 30 BYN"
 executionTime: "от 1 часа"
 featured: false

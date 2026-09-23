@@ -4,7 +4,7 @@ metaTitle: "Замена ремня ГРМ в Минске — от 120 BYN, с 
 description: "Когда менять ремень ГРМ? Признаки износа, интервалы замены, цена. Обрыв = капремонт двигателя. Замена в Минске от 120 BYN. ☎ +375 29 373-71-61."
 slug: "zamena-remnya-grm-v-minske"
 pubDate: "2026-08-18"
-image: "/images/services/zamena-remnya-grm-main.jpg"
+image: "/images/services/zamena-remnya-grm-main.webp"
 serviceSlug: "zamena-remnya-grm"
 category: "slesarnye"
 ---

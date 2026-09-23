@@ -4,7 +4,7 @@ metaTitle: "Ремонт МКПП в Минске — диагностика, з
 description: "Ремонт механической коробки передач (МКПП) в Минске. Диагностика, замена подшипников, синхронизаторов, масла. Любые марки авто. +375 29 373-71-61."
 slug: "diagnostika-i-remont-mkpp"
 category: "diagnostics"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 50 BYN"
 executionTime: "от 3 часов"
 featured: false

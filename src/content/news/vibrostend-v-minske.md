@@ -4,7 +4,7 @@ metaTitle: "Вибростенд в Минске — от 40 BYN, диагнос
 description: "Вибростенд — профессиональная диагностика подвески. Проверка амортизаторов, сайлентблоков, опор. От 40 BYN. ☎ +375 29 373-71-61."
 slug: "vibrostend-v-minske"
 pubDate: "2026-04-14"
-image: "/images/services/diagnostika-podveski-main.jpg"
+image: "/images/services/diagnostika-podveski-main.webp"
 serviceSlug: "vibrostend"
 category: "diagnostics"
 ---

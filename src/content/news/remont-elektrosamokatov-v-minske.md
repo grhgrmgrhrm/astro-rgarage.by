@@ -4,7 +4,7 @@ metaTitle: "Ремонт электросамокатов в Минске — о
 description: "Ремонт электросамокатов и электроскутеров в Минске от 15 BYN. Xiaomi, Ninebot, Kugoo, Dualtron. Батарея, мотор, контроллер. ☎ +375 29 373-71-61."
 slug: "remont-elektrosamokatov-v-minske"
 pubDate: "2026-01-02"
-image: "/images/services/elektrosamokaty-i-elektroskutery-main.jpg"
+image: "/images/services/elektrosamokaty-i-elektroskutery-main.webp"
 serviceSlug: "elektrosamokaty-i-elektroskutery"
 category: "slesarnye"
 ---

@@ -4,7 +4,7 @@ metaTitle: "Запчасти для китайских авто в Минске 
 description: "Запчасти для Geely, Chery, Haval в Минске. Оригинал или аналог — что выбрать? Цены, наличие, доставка под заказ. ☎ +375 29 373-71-61."
 slug: "zapchasti-dlya-kitajskih-avtomobilej-v-minske"
 pubDate: "2026-09-11"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 serviceSlug: "zapchasti-dlya-kitajskih-avtomobilej"
 category: "kitajskie"
 ---

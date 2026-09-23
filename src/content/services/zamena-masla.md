@@ -4,7 +4,7 @@ metaTitle: "Замена масла в двигателе, АКПП, МКПП в
 description: "Замена масла в Минске: двигатель, АКПП, МКПП, ГУР. С фильтром, оригинальные масла. Все марки авто. От 15 BYN. +375 29 373-71-61."
 slug: "zamena-masla"
 category: "slesarnye"
-image: "/images/services/motor-oil.jpg"
+image: "/images/services/motor-oil.webp"
 priceFrom: "от 15 BYN"
 executionTime: "от 30 минут"
 featured: false

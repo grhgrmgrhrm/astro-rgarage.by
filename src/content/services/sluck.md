@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Слуцке — от 310 BYN, 24/7 | Ржав
 description: "Эвакуатор в Слуцке. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 310 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "sluck"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 310 BYN"
 executionTime: "подача от 30 минут"
 featured: false

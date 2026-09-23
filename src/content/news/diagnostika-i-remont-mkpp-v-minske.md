@@ -4,7 +4,7 @@ metaTitle: "Диагностика и ремонт МКПП в Минске — 
 description: "Хруст при переключении? Выбивает передачу? Ремонт МКПП в Минске от 50 BYN. Замена сцепления, синхронизаторов, подшипников. ☎ +375 29 373-71-61."
 slug: "diagnostika-i-remont-mkpp-v-minske"
 pubDate: "2026-05-08"
-image: "/images/services/diagnostika-i-remont-mkpp-main.jpg"
+image: "/images/services/diagnostika-i-remont-mkpp-main.webp"
 serviceSlug: "diagnostika-i-remont-mkpp"
 category: "slesarnye"
 ---

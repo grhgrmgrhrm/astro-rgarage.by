@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Руденске — от 120 BYN, 24/7 | Рж
 description: "Эвакуатор в Руденске. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 120 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "rudensk"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 120 BYN"
 executionTime: "подача от 30 минут"
 featured: false

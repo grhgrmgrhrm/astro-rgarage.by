@@ -4,7 +4,7 @@ metaTitle: "Замена ступичного подшипника в Минск
 description: "Замена ступичных подшипников в Минске. Передних, задних, ступица в сборе. Все марки авто. Запрессовка. Гарантия. +375 29 373-71-61."
 slug: "zamena-stupichnogo-podshipnika"
 category: "slesarnye"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 40 BYN"
 executionTime: "от 1,5 часов"
 featured: false

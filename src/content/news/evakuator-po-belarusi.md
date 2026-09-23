@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор по Беларуси — Минск, облас�
 description: "Эвакуатор по Беларуси. Доставка авто из любого города в Минск и обратно. Брест, Гродно, Витебск, Могилёв, Гомель. ☎ +375 29 373-71-61."
 slug: "evakuator-po-belarusi"
 pubDate: "2026-02-19"
-image: "/images/services/evakuator-po-belarusi-1.jpg"
+image: "/images/services/evakuator-po-belarusi-1.webp"
 serviceSlug: "evakuator-po-belarusi"
 category: "evakuator"
 ---

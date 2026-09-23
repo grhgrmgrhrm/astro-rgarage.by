@@ -4,7 +4,7 @@ metaTitle: "Заправка кондиционера в Минске — от 5
 description: "Кондиционер не холодит? Заправка кондиционера в Минске от 50 BYN. Диагностика, поиск утечек, дозаправка, фреон. Гарантия. ☎ +375 29 373-71-61."
 slug: "zapravka-kondicionera-v-minske"
 pubDate: "2026-04-20"
-image: "/images/services/slesarnye-raboty-2.jpg"
+image: "/images/services/slesarnye-raboty-2.webp"
 serviceSlug: "zapravka-kondicionera"
 category: "slesarnye"
 ---

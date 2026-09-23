@@ -4,7 +4,7 @@ metaTitle: "Проверка авто перед покупкой в Минск�
 description: "Покупаете б/у авто? Проверка перед покупкой в Минске от 70 BYN. Пробег, кузов, двигатель, подвеска, электрика. Не дайте себя обмануть. ☎ +375 29 373-71-61."
 slug: "proverka-avto-pered-pokupkoj-v-minske"
 pubDate: "2026-03-27"
-image: "/images/services/proverka-avto-pered-pokupkoj-main.jpg"
+image: "/images/services/proverka-avto-pered-pokupkoj-main.webp"
 serviceSlug: "proverka-avto-pered-pokupkoj"
 category: "diagnostics"
 ---

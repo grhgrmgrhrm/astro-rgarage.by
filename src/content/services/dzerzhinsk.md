@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Дзержинске — от 100 BYN, 24/7 | 
 description: "Эвакуатор в Дзержинске. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 100 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "dzerzhinsk"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 100 BYN"
 executionTime: "подача от 30 минут"
 featured: false

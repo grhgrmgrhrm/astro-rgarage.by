@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Копыле — от 230 BYN, 24/7 | Ржав
 description: "Эвакуатор в Копыле. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 230 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "kopyl"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 230 BYN"
 executionTime: "подача от 30 минут"
 featured: false

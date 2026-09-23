@@ -4,7 +4,7 @@ metaTitle: "Обслуживание и ремонт китайских авто
 description: "Обслуживание и ремонт китайских автомобилей в Минске: Geely, Chery, Haval, Changan, BYD, Exeed, Omoda, JAC. Диагностика, ТО, слесарный ремонт, запчасти. ☎ +375 29 373-71-61."
 slug: "obsluzhivanie-kitajskih-avtomobilej"
 category: "kitajskie"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 30 BYN"
 executionTime: "от 1 часа"
 featured: true

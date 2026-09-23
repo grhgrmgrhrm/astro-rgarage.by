@@ -4,7 +4,7 @@ metaTitle: "Ремонт китайских авто в Минске — от 50
 description: "Сломался Geely, Chery или Haval? Ремонт китайских автомобилей в Минске за 1 день. Запчасти в наличии, гарантия, опыт 8 лет. ☎ +375 29 373-71-61."
 slug: "remont-kitajskih-avtomobilej-v-minske"
 pubDate: "2026-09-17"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 serviceSlug: "obsluzhivanie-kitajskih-avtomobilej"
 category: "kitajskie"
 ---

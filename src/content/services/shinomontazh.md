@@ -4,7 +4,7 @@ metaTitle: "Шиномонтаж в Минске — сезонная перео
 description: "Шиномонтаж в Минске: переобувка, балансировка, ремонт проколов, правка дисков. R13–R22, легковые и внедорожники. Звоните +375 29 373-71-61."
 slug: "shinomontazh"
 category: "shinomontazh"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 15 BYN"
 executionTime: "от 20 минут"
 featured: false

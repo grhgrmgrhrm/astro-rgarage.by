@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор на Харьковской (Минск) — от
 description: "Эвакуатор на Харьковской в Минске. Подача от 20 минут, круглосуточно. Легковые, джипы, микроавтобусы. От 50 BYN. Звоните +375 29 373-71-61."
 slug: "harkovskaya"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 50 BYN"
 executionTime: "подача от 20 минут"
 featured: false

@@ -4,7 +4,7 @@ metaTitle: "Трезвый водитель в Минске — от 30 BYN, 24/
 description: "Трезвый водитель в Минске от 30 BYN. Довезём вас и вашу машину домой после праздника. Круглосуточно, без выходных. ☎ +375 29 373-71-61."
 slug: "trezvyj-voditel-v-minske"
 pubDate: "2026-02-01"
-image: "/images/services/evakuator-v-minske-7.jpg"
+image: "/images/services/evakuator-v-minske-7.webp"
 serviceSlug: "trezvyj-voditel"
 category: "evakuator"
 ---

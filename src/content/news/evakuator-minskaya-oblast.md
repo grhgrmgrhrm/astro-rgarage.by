@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор Минская область — от 60 BYN, 24
 description: "Эвакуатор в Минской области. Все райцентры: Жодино, Борисов, Слуцк, Молодечно, Дзержинск. Подача 30–90 минут. ☎ +375 29 373-71-61."
 slug: "evakuator-minskaya-oblast"
 pubDate: "2025-11-14"
-image: "/images/services/evakuator-minskaya-oblast-1.jpg"
+image: "/images/services/evakuator-minskaya-oblast-1.webp"
 serviceSlug: "evakuator-minskaya-oblast"
 category: "evakuator"
 ---

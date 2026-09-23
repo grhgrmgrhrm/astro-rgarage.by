@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Минске круглосуточно — о
 description: "Машина сломалась на дороге? Эвакуатор в Минске за 20 минут, от 30 BYN. Круглосуточно, бережная погрузка, любые авто. ☎ +375 29 373-71-61."
 slug: "evakuator-v-minske-kruglosutochno"
 pubDate: "2026-08-30"
-image: "/images/services/evakuator-v-minske-7.jpg"
+image: "/images/services/evakuator-v-minske-7.webp"
 serviceSlug: "evakuator-v-minske"
 category: "evakuator"
 ---

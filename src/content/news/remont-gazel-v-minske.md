@@ -4,7 +4,7 @@ metaTitle: "Ремонт ГАЗели в Минске — от 35 BYN с НДС,
 description: "Ремонт ГАЗели в Минске от 35 BYN с НДС. Соболь, ГАЗель Next, ГАЗ-3302. Двигатель, коробка, подвеска. Для юрлиц — счета и акты. ☎ +375 29 373-71-61."
 slug: "remont-gazel-v-minske"
 pubDate: "2026-02-13"
-image: "/images/services/remont-avtomobilej-gazel-35-rublej-s-nds-main.jpg"
+image: "/images/services/remont-avtomobilej-gazel-35-rublej-s-nds-main.webp"
 serviceSlug: "remont-avtomobilej-gazel-35-rublej-s-nds"
 category: "slesarnye"
 ---

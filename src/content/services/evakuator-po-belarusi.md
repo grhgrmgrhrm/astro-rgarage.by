@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор по Беларуси — междугородн�
 description: "Эвакуатор по всей Беларуси. Междугородняя перевозка автомобилей. Брест, Гродно, Гомель, Витебск, Могилёв. От 300 BYN. 24/7. +375 29 373-71-61."
 slug: "evakuator-po-belarusi"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 300 BYN"
 executionTime: "подача от 1 часа"
 featured: false

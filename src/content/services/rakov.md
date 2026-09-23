@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Ракове — от 130 BYN, 24/7 | Ржав
 description: "Эвакуатор в Ракове. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 130 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "rakov"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 130 BYN"
 executionTime: "подача от 30 минут"
 featured: false

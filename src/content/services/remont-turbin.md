@@ -4,7 +4,7 @@ metaTitle: "Ремонт турбин в Минске — диагностика
 description: "Ремонт и диагностика турбин (турбокомпрессоров) в Минске. Легковые и коммерческие авто, все марки. Восстановление вместо замены. +375 29 373-71-61."
 slug: "remont-turbin"
 category: "turbin"
-image: "/images/services/turbocharger.jpg"
+image: "/images/services/turbocharger.webp"
 priceFrom: "от 150 BYN"
 executionTime: "от 1 дня"
 featured: true

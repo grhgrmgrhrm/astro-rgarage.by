@@ -4,7 +4,7 @@ metaTitle: "Ремонт велосипедов в Минске — диагно
 description: "Ремонт и обслуживание велосипедов в Минске. Диагностика бесплатно, сезонная подготовка, настройка переключателей, тормозов. +375 29 373-71-61."
 slug: "velosipedy"
 category: "other"
-image: "/images/services/bicycle-service.jpg"
+image: "/images/services/bicycle-service.webp"
 priceFrom: "бесплатно"
 executionTime: "от 30 минут"
 featured: false

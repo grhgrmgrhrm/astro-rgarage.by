@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Несвиже — от 280 BYN, 24/7 | Ржа
 description: "Эвакуатор в Несвиже. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 280 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "nesvizh"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 280 BYN"
 executionTime: "подача от 30 минут"
 featured: false

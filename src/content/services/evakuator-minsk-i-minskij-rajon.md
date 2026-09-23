@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор Минск и Минский район — от 
 description: "Эвакуатор в Минске и Минском районе. Все районы города и пригород. Подача от 20 минут. Легковые, джипы, микроавтобусы. +375 29 373-71-61."
 slug: "evakuator-minsk-i-minskij-rajon"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 50 BYN"
 executionTime: "подача от 20 минут"
 featured: false

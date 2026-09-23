@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Мяделе — от 330 BYN, 24/7 | Ржав
 description: "Эвакуатор в Мяделе. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 330 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "myadel"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 330 BYN"
 executionTime: "подача от 30 минут"
 featured: false

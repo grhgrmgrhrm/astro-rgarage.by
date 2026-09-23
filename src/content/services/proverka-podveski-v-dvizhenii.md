@@ -4,7 +4,7 @@ metaTitle: "Проверка подвески в движении в Минск�
 description: "Проверка подвески в движении в Минске: дорожные испытания на разных покрытиях. Выявление стуков, вибраций, увода, раскачки. Диагностика ходовой в реальных условиях. ☎ +375 29 373-71-61."
 slug: "proverka-podveski-v-dvizhenii"
 category: "diagnostics"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 35 BYN"
 executionTime: "от 30 минут"
 featured: false

@@ -4,7 +4,7 @@ metaTitle: "Ремонт тормозов в Минске — от 25 BYN, за�
 description: "Скрипят тормоза? Вибрирует педаль? Ремонт тормозов в Минске от 25 BYN. Колодки, диски, суппорты, тормозные шланги. Гарантия. ☎ +375 29 373-71-61."
 slug: "remont-tormozov-v-minske"
 pubDate: "2026-06-07"
-image: "/images/services/diagnostika-i-remont-tormoznoj-sistemy-protochka-tormoznyh-diskov-main.jpg"
+image: "/images/services/diagnostika-i-remont-tormoznoj-sistemy-protochka-tormoznyh-diskov-main.webp"
 serviceSlug: "diagnostika-i-remont-tormoznoj-sistemy-protochka-tormoznyh-diskov"
 category: "slesarnye"
 ---

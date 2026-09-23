@@ -4,7 +4,7 @@ metaTitle: "Ремонт генератора в Минске — от 30 BYN, �
 description: "Горит лампа аккумулятора? АКБ не заряжается? Ремонт генератора в Минске от 30 BYN. Диагностика, замена реле, диодного моста, подшипников. ☎ +375 29 373-71-61."
 slug: "remont-generatora-v-minske"
 pubDate: "2026-07-13"
-image: "/images/services/zamena-i-remont-generatora-main.jpg"
+image: "/images/services/zamena-i-remont-generatora-main.webp"
 serviceSlug: "zamena-i-remont-generatora"
 category: "avtoelektrika"
 ---

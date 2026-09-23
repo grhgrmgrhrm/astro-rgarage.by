@@ -4,7 +4,7 @@ metaTitle: "Диагностика и ремонт форсунок в Минс�
 description: "Двигатель дымит, расход вырос? Диагностика и ремонт форсунок в Минске от 40 BYN. Промывка, замена, проверка на стенде. ☎ +375 29 373-71-61."
 slug: "diagnostika-i-remont-forsunok-v-minske"
 pubDate: "2026-05-14"
-image: "/images/services/diagnostika-i-remont-forsunok-main.jpg"
+image: "/images/services/diagnostika-i-remont-forsunok-main.webp"
 serviceSlug: "diagnostika-i-remont-forsunok"
 category: "diagnostics"
 ---

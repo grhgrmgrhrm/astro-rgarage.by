@@ -4,7 +4,7 @@ metaTitle: "Компьютерная диагностика авто в Минс
 description: "Горит Check Engine? Компьютерная диагностика авто в Минске за 20 минут. Все марки, расшифровка ошибок ЭБУ, ABS, SRS. От 40 BYN. ☎ +375 29 373-71-61."
 slug: "kompyuternaya-diagnostika-avtomobilya-v-minske"
 pubDate: "2026-08-24"
-image: "/images/services/kompyuternaya-diagnostika-i-remont-elektriki-avtomobilya-main.jpg"
+image: "/images/services/kompyuternaya-diagnostika-i-remont-elektriki-avtomobilya-main.webp"
 serviceSlug: "kompyuternaya-diagnostika-i-remont-elektriki-avtomobilya"
 category: "diagnostics"
 ---

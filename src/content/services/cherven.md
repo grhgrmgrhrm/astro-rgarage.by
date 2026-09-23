@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Червене — от 180 BYN, 24/7 | Ржа
 description: "Эвакуатор в Червене. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 180 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "cherven"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 180 BYN"
 executionTime: "подача от 30 минут"
 featured: false

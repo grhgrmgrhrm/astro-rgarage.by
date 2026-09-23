@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор Сухарево Минск — от 35 BYN, 20 �
 description: "Эвакуатор в Сухарево (Минск) — подача от 20 минут. Все улицы района: Радошковичи, Лошица, Малиновка. ☎ +375 29 373-71-61."
 slug: "evakuator-suharevo"
 pubDate: "2025-11-08"
-image: "/images/services/suharevo-1.jpg"
+image: "/images/services/suharevo-1.webp"
 serviceSlug: "suharevo"
 category: "evakuator"
 ---

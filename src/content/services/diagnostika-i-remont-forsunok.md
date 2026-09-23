@@ -4,7 +4,7 @@ metaTitle: "Ремонт форсунок и ТНВД в Минске — диа
 description: "Ремонт топливных форсунок и ТНВД в Минске. Стендовая диагностика Bosch, ультразвуковая чистка, восстановление. Гарантия. Звоните +375 29 373-71-61."
 slug: "diagnostika-i-remont-forsunok"
 category: "diagnostics"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 30 BYN"
 executionTime: "от 2 часов"
 featured: false

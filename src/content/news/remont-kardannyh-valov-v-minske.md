@@ -4,7 +4,7 @@ metaTitle: "Ремонт карданных валов в Минске — от 
 description: "Вибрация на скорости? Стук под днищем? Ремонт карданных валов в Минске от 80 BYN. Замена крестовин, подвесного подшипника, балансировка. ☎ +375 29 373-71-61."
 slug: "remont-kardannyh-valov-v-minske"
 pubDate: "2026-05-26"
-image: "/images/services/remont-kardannyh-valov-main.jpg"
+image: "/images/services/remont-kardannyh-valov-main.webp"
 serviceSlug: "remont-kardannyh-valov"
 category: "slesarnye"
 ---

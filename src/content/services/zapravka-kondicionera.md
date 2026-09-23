@@ -4,7 +4,7 @@ metaTitle: "Заправка автокондиционера в Минске �
 description: "Заправка кондиционера в Минске: заправка фреоном, диагностика, поиск утечек, ремонт компрессора. Все марки авто. От 50 BYN. ☎ +375 29 373-71-61."
 slug: "zapravka-kondicionera"
 category: "services"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 50 BYN"
 executionTime: "от 30 минут"
 featured: false

@@ -4,7 +4,7 @@ metaTitle: "Подменный автомобиль на время ремонт
 description: "Подменный автомобиль на время ремонта вашего авто в Минске. Не остаётесь без машины, пока мы чиним вашу. Условия аренды. +375 29 373-71-61."
 slug: "podmennyj-avtomobil"
 category: "services"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 30 BYN/сутки"
 executionTime: "на время ремонта"
 featured: false

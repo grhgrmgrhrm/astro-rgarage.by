@@ -4,7 +4,7 @@ metaTitle: "Замена масла для такси в Минске — от 7
 description: "Замена масла для автомобилей такси в Минске — акция от 7 BYN. Двигатель, АКПП, МКПП. Быстро, с документами для отчётности. ☎ +375 29 373-71-61."
 slug: "zamena-masla-dlya-taksi-v-minske"
 pubDate: "2025-12-02"
-image: "/images/services/zamena-masla-dlya-taksi-main.jpg"
+image: "/images/services/zamena-masla-dlya-taksi-main.webp"
 serviceSlug: "zamena-masla-dlya-taksi"
 category: "slesarnye"
 ---

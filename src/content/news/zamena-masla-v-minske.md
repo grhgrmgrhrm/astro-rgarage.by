@@ -4,7 +4,7 @@ metaTitle: "Замена масла в Минске — от 30 BYN, ориги�
 description: "Когда менять масло? Какое выбрать? Замена масла в Минске от 30 BYN. Оригинальные масла, фильтры, все марки авто. ☎ +375 29 373-71-61."
 slug: "zamena-masla-v-minske"
 pubDate: "2026-07-01"
-image: "/images/services/zamena-masla-main.jpg"
+image: "/images/services/zamena-masla-main.webp"
 serviceSlug: "zamena-masla"
 category: "slesarnye"
 ---

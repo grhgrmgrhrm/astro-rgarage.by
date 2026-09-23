@@ -4,7 +4,7 @@ metaTitle: "Замена сайлентблоков в Минске — от 30 
 description: "Скрипит подвеска? Машину кидает? Замена сайлентблоков в Минске от 30 BYN. Признаки износа, пресс, сход-развал. Гарантия. ☎ +375 29 373-71-61."
 slug: "zamena-sajlentblokov-v-minske"
 pubDate: "2026-07-19"
-image: "/images/services/zamena-sajlentblokov-main.jpg"
+image: "/images/services/zamena-sajlentblokov-main.webp"
 serviceSlug: "zamena-sajlentblokov"
 category: "slesarnye"
 ---

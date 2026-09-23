@@ -4,7 +4,7 @@ metaTitle: "Замена ступичного подшипника в Минск
 description: "Гудит колесо на скорости? Замена ступичного подшипника в Минске от 40 BYN. Признаки износа, как определить сторону, гарантия. ☎ +375 29 373-71-61."
 slug: "zamena-stupichnogo-podshipnika-v-minske"
 pubDate: "2026-07-25"
-image: "/images/services/zamena-stupichnogo-podshipnika-main.jpg"
+image: "/images/services/zamena-stupichnogo-podshipnika-main.webp"
 serviceSlug: "zamena-stupichnogo-podshipnika"
 category: "slesarnye"
 ---

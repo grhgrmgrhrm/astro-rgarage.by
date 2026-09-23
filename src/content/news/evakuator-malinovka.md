@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор Малиновка Минск — от 35 BYN, 20
 description: "Эвакуатор в Малиновке (Минск) — подача от 20 минут. Все улицы района, близость к СТО. ☎ +375 29 373-71-61."
 slug: "evakuator-malinovka"
 pubDate: "2025-11-02"
-image: "/images/services/malinovka-1.jpg"
+image: "/images/services/malinovka-1.webp"
 serviceSlug: "malinovka"
 category: "evakuator"
 ---

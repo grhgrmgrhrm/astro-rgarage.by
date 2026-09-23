@@ -4,7 +4,7 @@ metaTitle: "Шиномонтаж в Минске — от 20 BYN, баланси
 description: "Переобувка, балансировка, ремонт прокола. Шиномонтаж в Минске от 20 BYN. Зимняя и летняя резина, все размеры. ☎ +375 29 373-71-61."
 slug: "shinomontazh-v-minske"
 pubDate: "2026-06-19"
-image: "/images/services/shinomontazh-main.jpg"
+image: "/images/services/shinomontazh-main.webp"
 serviceSlug: "shinomontazh"
 category: "shinomontazh"
 ---

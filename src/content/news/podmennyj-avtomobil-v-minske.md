@@ -4,7 +4,7 @@ metaTitle: "Подменный автомобиль в Минске — бесп
 description: "Подменный автомобиль в Минске — получите авто на время ремонта. Работаем с юрлицами. Не теряйте мобильность. ☎ +375 29 373-71-61."
 slug: "podmennyj-avtomobil-v-minske"
 pubDate: "2026-01-26"
-image: "/images/services/podmennyj-avtomobil-main.jpg"
+image: "/images/services/podmennyj-avtomobil-main.webp"
 serviceSlug: "podmennyj-avtomobil"
 category: "slesarnye"
 ---

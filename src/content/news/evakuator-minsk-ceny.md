@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор Минск цены — от 30 BYN, тарифы
 description: "Цены на эвакуатор в Минске. От 30 BYN в пределах МКАД. Как рассчитывается стоимость, что влияет на цену. ☎ +375 29 373-71-61."
 slug: "evakuator-minsk-ceny"
 pubDate: "2025-11-26"
-image: "/images/services/evakuator-minsk-ceny-main.jpg"
+image: "/images/services/evakuator-minsk-ceny-main.webp"
 serviceSlug: "evakuator-minsk-ceny"
 category: "evakuator"
 ---

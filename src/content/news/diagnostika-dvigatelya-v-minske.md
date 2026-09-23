@@ -4,7 +4,7 @@ metaTitle: "Диагностика двигателя в Минске — от 3
 description: "Двигатель троит, дымит, ест масло? Диагностика двигателя в Минске от 30 BYN. Компрессия, эндоскопия цилиндров, давление масла. ☎ +375 29 373-71-61."
 slug: "diagnostika-dvigatelya-v-minske"
 pubDate: "2026-06-13"
-image: "/images/services/diagnostika-dvigatelya-main.jpg"
+image: "/images/services/diagnostika-dvigatelya-main.webp"
 serviceSlug: "diagnostika-dvigatelya"
 category: "diagnostics"
 ---

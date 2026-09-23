@@ -4,7 +4,7 @@ metaTitle: "Автоэлектрика в Минске — диагностик�
 description: "Ремонт автоэлектрики в Минске: компьютерная диагностика, генератор, стартер, проводка. Бесплатная диагностика, гарантия. Звоните +375 29 373-71-61."
 slug: "avtoelektrika"
 category: "avtoelektrika"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 20 BYN"
 executionTime: "от 1 часа"
 featured: false

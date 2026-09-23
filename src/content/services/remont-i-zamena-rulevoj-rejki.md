@@ -4,7 +4,7 @@ metaTitle: "Ремонт рулевой рейки в Минске — гидр�
 description: "Ремонт и замена рулевой рейки в Минске. Гидравлическая, электрическая, механическая. Замена штока, ремкомплект, масло ГУР. +375 29 373-71-61."
 slug: "remont-i-zamena-rulevoj-rejki"
 category: "slesarnye"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 80 BYN"
 executionTime: "от 1 дня"
 featured: false

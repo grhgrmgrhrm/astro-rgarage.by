@@ -4,7 +4,7 @@ metaTitle: "Эвакуация авто до 25 тонн в Минске — ф�
 description: "Эвакуация автомобилей весом до 25 тонн. Фуры, автобусы, спецтехника. Тяжёлый эвакуатор с манипулятором. Минск и область. ☎ +375 29 373-71-61."
 slug: "evakuaciya-avtomobilej-do-25-tonn"
 pubDate: "2026-03-03"
-image: "/images/services/evakuaciya-avtomobilej-vesom-do-25-tonn-main.jpg"
+image: "/images/services/evakuaciya-avtomobilej-vesom-do-25-tonn-main.webp"
 serviceSlug: "evakuaciya-avtomobilej-vesom-do-25-tonn"
 category: "evakuator"
 ---

@@ -4,7 +4,7 @@ metaTitle: "Автоэлектрика в Минске — от 30 BYN, диаг
 description: "Глохнет, не заводится, мигают лампочки? Ремонт автоэлектрики в Минске от 30 BYN. Проводка, датчики, блоки, генератор. ☎ +375 29 373-71-61."
 slug: "avtoelektrika-v-minske"
 pubDate: "2026-02-07"
-image: "/images/services/avtoelektrika-1.jpg"
+image: "/images/services/avtoelektrika-1.webp"
 serviceSlug: "avtoelektrika"
 category: "diagnostics"
 ---

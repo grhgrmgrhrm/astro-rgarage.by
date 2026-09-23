@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Молодечно — от 190 BYN, 24/7 | Р
 description: "Эвакуатор в Молодечно. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 190 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "molodechno"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 190 BYN"
 executionTime: "подача от 30 минут"
 featured: false

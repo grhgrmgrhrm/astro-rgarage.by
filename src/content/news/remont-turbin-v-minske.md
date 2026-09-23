@@ -4,7 +4,7 @@ metaTitle: "Ремонт турбин в Минске — от 150 BYN, с га�
 description: "Свистит турбина? Дымит, нет тяги? Ремонт турбины в Минске от 150 BYN. Диагностика, замена картриджа, балансировка. Гарантия. ☎ +375 29 373-71-61."
 slug: "remont-turbin-v-minske"
 pubDate: "2026-06-25"
-image: "/images/services/remont-turbin-main.jpg"
+image: "/images/services/remont-turbin-main.webp"
 serviceSlug: "remont-turbin"
 category: "turbin"
 ---

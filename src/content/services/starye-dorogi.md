@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Старых Дорогах — от 340 BYN, 
 description: "Эвакуатор в Старых Дорогах. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 340 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "starye-dorogi"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 340 BYN"
 executionTime: "подача от 30 минут"
 featured: false

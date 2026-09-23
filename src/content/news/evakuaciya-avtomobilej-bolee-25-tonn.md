@@ -4,7 +4,7 @@ metaTitle: "Эвакуация авто более 25 тонн — тяжёла�
 description: "Эвакуация автомобилей весом более 25 тонн. Тралы, манипуляторы для сверхтяжёлой техники. Беларусь. ☎ +375 29 373-71-61."
 slug: "evakuaciya-avtomobilej-bolee-25-tonn"
 pubDate: "2026-02-25"
-image: "/images/services/evakuaciya-avtomobilej-bolee-25-tonn-main.jpg"
+image: "/images/services/evakuaciya-avtomobilej-bolee-25-tonn-main.webp"
 serviceSlug: "evakuaciya-avtomobilej-bolee-25-tonn"
 category: "evakuator"
 ---

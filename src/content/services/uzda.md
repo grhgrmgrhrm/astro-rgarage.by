@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Узде — от 150 BYN, 24/7 | Ржавый
 description: "Эвакуатор в Узде. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 150 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "uzda"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 150 BYN"
 executionTime: "подача от 30 минут"
 featured: false

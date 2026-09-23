@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор Минск и Минский район — от 
 description: "Эвакуатор в Минске и Минском районе. Подача 20–40 минут. Все районы Минска и пригороды. ☎ +375 29 373-71-61."
 slug: "evakuator-minsk-i-minskij-rajon"
 pubDate: "2025-11-20"
-image: "/images/services/evakuator-v-minske-8.jpg"
+image: "/images/services/evakuator-v-minske-8.webp"
 serviceSlug: "evakuator-minsk-i-minskij-rajon"
 category: "evakuator"
 ---

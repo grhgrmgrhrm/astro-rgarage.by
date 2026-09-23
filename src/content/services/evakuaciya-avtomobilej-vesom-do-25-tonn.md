@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор авто до 2,5 тонн в Минске — о
 description: "Эвакуация автомобилей весом до 2,5 тонн в Минске. Джипы, минивэны, паркетники, кроссоверы. Подача от 20 минут. +375 29 373-71-61."
 slug: "evakuaciya-avtomobilej-vesom-do-25-tonn"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 55 BYN"
 executionTime: "подача от 20 минут"
 featured: false

@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор грузовых авто в Минске — г�
 description: "Эвакуация грузовых автомобилей в Минске. ГАЗель, ЗИЛ, Foton, MAN, Volvo, Scania. Тралы и тяжеловозы. От 80 BYN. 24/7. +375 29 373-71-61."
 slug: "evakuaciya-gruzovyh-avtomobilej"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 80 BYN"
 executionTime: "подача от 30 минут"
 featured: false

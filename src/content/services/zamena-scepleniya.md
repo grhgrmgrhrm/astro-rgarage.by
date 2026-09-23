@@ -4,7 +4,7 @@ metaTitle: "Ремонт и замена сцепления в Минске — 
 description: "Замена сцепления в Минске. Корзина, диск, выжимной подшипник. Механика, робот. Все марки авто. Гарантия. +375 29 373-71-61."
 slug: "zamena-scepleniya"
 category: "slesarnye"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 150 BYN"
 executionTime: "от 4 часов"
 featured: false

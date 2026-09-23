@@ -4,7 +4,7 @@ metaTitle: "Промывка форсунок в Минске — от 60 BYN | 
 description: "Промывка форсунок в Минске от 60 BYN. Очистка топливной системы без разборки. Снижение расхода, устранение троения. ☎ +375 29 373-71-61."
 slug: "promyvka-forsunok-v-minske"
 pubDate: "2025-12-26"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 serviceSlug: "promyvka-forsunok"
 category: "slesarnye"
 ---

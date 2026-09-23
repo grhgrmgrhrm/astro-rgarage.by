@@ -4,7 +4,7 @@ metaTitle: "Компьютерная диагностика авто в Минс
 description: "Компьютерная диагностика автомобиля в Минске. Считывание ошибок ЭБУ, ABS, SRS, АКПП. Все марки авто. От 40 BYN. Звоните +375 29 373-71-61."
 slug: "kompyuternaya-diagnostika-i-remont-elektriki-avtomobilya"
 category: "diagnostics"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 40 BYN"
 executionTime: "от 20 минут"
 featured: false

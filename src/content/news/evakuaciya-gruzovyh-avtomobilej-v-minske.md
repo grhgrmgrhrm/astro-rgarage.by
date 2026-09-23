@@ -4,7 +4,7 @@ metaTitle: "Эвакуация грузовых авто в Минске — о�
 description: "Эвакуация грузовых автомобилей в Минске и области. ГАЗель, фургоны, фуры до 25 тонн. Тяжёлый эвакуатор, опытные водители. ☎ +375 29 373-71-61."
 slug: "evakuaciya-gruzovyh-avtomobilej-v-minske"
 pubDate: "2026-03-09"
-image: "/images/services/evakuaciya-gruzovyh-avtomobilej-main.jpg"
+image: "/images/services/evakuaciya-gruzovyh-avtomobilej-main.webp"
 serviceSlug: "evakuaciya-gruzovyh-avtomobilej"
 category: "evakuator"
 ---

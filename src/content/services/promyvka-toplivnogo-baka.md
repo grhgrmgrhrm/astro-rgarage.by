@@ -4,7 +4,7 @@ metaTitle: "Промывка топливного бака в Минске — �
 description: "Промывка и чистка топливного бака в Минске. Легковые, микроавтобусы, грузовики. Удаление грязи, ржавчины, воды. Гарантия. +375 29 373-71-61."
 slug: "promyvka-toplivnogo-baka"
 category: "services"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 50 BYN"
 executionTime: "от 2 часов"
 featured: false

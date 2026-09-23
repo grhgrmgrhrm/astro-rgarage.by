@@ -4,7 +4,7 @@ metaTitle: "Ремонт рулевого управления в Минске �
 description: "Люфтит руль? Течёт ГУР? Ремонт рулевого управления в Минске от 30 BYN. Тяги, наконечники, насос, шланги. Сход-развал. ☎ +375 29 373-71-61."
 slug: "remont-rulevogo-upravleniya-v-minske"
 pubDate: "2026-04-26"
-image: "/images/services/zamena-i-remont-rulevogo-upravleniya-main.jpg"
+image: "/images/services/zamena-i-remont-rulevogo-upravleniya-main.webp"
 serviceSlug: "zamena-i-remont-rulevogo-upravleniya"
 category: "slesarnye"
 ---

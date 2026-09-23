@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Марьиной Горке — от 160 BYN, 
 description: "Эвакуатор в Марьиной Горке. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 160 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "marina-gorka"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 160 BYN"
 executionTime: "подача от 30 минут"
 featured: false

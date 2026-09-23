@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Минске 24/7 — от 50 BYN, подач�
 description: "Эвакуатор в Минске круглосуточно. Легковые, внедорожники, микроавтобусы, грузовики. Подача от 20 минут. От 50 BYN. Все районы. Звоните +375 29 373-71-61."
 slug: "evakuator-v-minske"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 50 BYN"
 executionTime: "подача от 20 минут"
 featured: true

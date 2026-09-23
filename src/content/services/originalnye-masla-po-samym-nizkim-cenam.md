@@ -4,7 +4,7 @@ metaTitle: "Моторные масла в Минске — оригинальн
 description: "Оригинальные моторные масла в Минске: Ford, Elf, Castrol, Mobil, Shell. Замена масла с фильтром. Наличный и безналичный расчёт. +375 29 373-71-61."
 slug: "originalnye-masla-po-samym-nizkim-cenam"
 category: "services"
-image: "/images/services/motor-oil.jpg"
+image: "/images/services/motor-oil.webp"
 priceFrom: "от 15 BYN/л"
 executionTime: "от 30 минут"
 featured: false

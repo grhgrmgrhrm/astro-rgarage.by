@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор минивэнов и микроавтобусо�
 description: "Эвакуация минивэнов и микроавтобусов в Минске. VW Multivan, Mercedes Vito/Viano, Toyota Alphard, Honda Odyssey. От 55 BYN. +375 29 373-71-61."
 slug: "evakuaciya-minivenov-i-mikroavtobusov"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 55 BYN"
 executionTime: "подача от 20 минут"
 featured: false

@@ -4,7 +4,7 @@ metaTitle: "Замена приводных ремней в Минске — о�
 description: "Замена приводных ремней, роликов, натяжителей в Минске от 20 BYN. Ремень генератора, кондиционера, помпы. Все марки авто. ☎ +375 29 373-71-61."
 slug: "zamena-privodnyh-remnej-v-minske"
 pubDate: "2025-12-14"
-image: "/images/services/zamena-privodnyh-remnej-main.jpg"
+image: "/images/services/zamena-privodnyh-remnej-main.webp"
 serviceSlug: "zamena-privodnyh-remnej"
 category: "slesarnye"
 ---

@@ -4,7 +4,7 @@ metaTitle: "Диагностика подвески в Минске — от 30 
 description: "Диагностика подвески автомобиля в Минске. Проверка амортизаторов, сайлентблоков, шаровых, рулевых тяг. От 30 BYN. Звоните +375 29 373-71-61."
 slug: "diagnostika-podveski"
 category: "diagnostics"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 30 BYN"
 executionTime: "от 30 минут"
 featured: true

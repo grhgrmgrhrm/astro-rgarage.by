@@ -4,7 +4,7 @@ metaTitle: "Запчасти для китайских автомобилей в
 description: "Запчасти для китайских автомобилей в Минске: Geely, Chery, Haval, Changan, BYD, Exeed, Omoda. Оригиналы и аналоги, в наличии и под заказ. ☎ +375 29 373-71-61."
 slug: "zapchasti-dlya-kitajskih-avtomobilej"
 category: "kitajskie"
-image: "/images/services/motor-oil.jpg"
+image: "/images/services/motor-oil.webp"
 priceFrom: "от 15 BYN"
 executionTime: "в наличии / 3–14 дней под заказ"
 featured: false

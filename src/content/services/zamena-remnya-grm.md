@@ -4,7 +4,7 @@ metaTitle: "Замена ремня и цепи ГРМ в Минске — с г
 description: "Замена ремня и цепи ГРМ в Минске. Все марки авто, оригинальные запчасти, замена роликов и помпы. Гарантия. +375 29 373-71-61."
 slug: "zamena-remnya-grm"
 category: "slesarnye"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 150 BYN"
 executionTime: "от 4 часов"
 featured: true

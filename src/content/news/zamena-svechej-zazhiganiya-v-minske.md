@@ -4,7 +4,7 @@ metaTitle: "Замена свечей зажигания в Минске — о�
 description: "Двигатель троит, расход вырос? Замена свечей зажигания в Минске от 20 BYN. Иридиевые, платиновые, медные. Все марки авто. ☎ +375 29 373-71-61."
 slug: "zamena-svechej-zazhiganiya-v-minske"
 pubDate: "2026-05-20"
-image: "/images/services/zamena-svechej-main.jpg"
+image: "/images/services/zamena-svechej-main.webp"
 serviceSlug: "zamena-svechej"
 category: "slesarnye"
 ---

@@ -4,7 +4,7 @@ metaTitle: "Ремонт тормозов и проточка дисков в М
 description: "Диагностика и ремонт тормозной системы в Минске. Проточка тормозных дисков без снятия, замена колодок, шлангов. Гарантия. Звоните +375 29 373-71-61."
 slug: "diagnostika-i-remont-tormoznoj-sistemy-protochka-tormoznyh-diskov"
 category: "diagnostics"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 20 BYN"
 executionTime: "от 1 часа"
 featured: false

@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Соколе — от 60 BYN, 24/7 | Ржав�
 description: "Эвакуатор в Соколе. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 60 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "sokol"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 60 BYN"
 executionTime: "подача от 30 минут"
 featured: false

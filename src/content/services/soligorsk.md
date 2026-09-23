@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Солигорске — от 310 BYN, 24/7 | 
 description: "Эвакуатор в Солигорске. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 310 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "soligorsk"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 310 BYN"
 executionTime: "подача от 30 минут"
 featured: false

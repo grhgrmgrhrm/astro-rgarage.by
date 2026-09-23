@@ -4,7 +4,7 @@ metaTitle: "Ремонт электросамокатов и электрове�
 description: "Ремонт электросамокатов и электровелосипедов в Минске: диагностика, аккумулятор, контроллер, мотор-колесо. Гарантия. Звоните +375 29 373-71-61."
 slug: "electro"
 category: "avtoelektrika"
-image: "/images/services/bicycle-service.jpg"
+image: "/images/services/bicycle-service.webp"
 priceFrom: "от 10 BYN"
 executionTime: "от 30 минут"
 featured: false

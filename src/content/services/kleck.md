@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Клецке — от 260 BYN, 24/7 | Ржав
 description: "Эвакуатор в Клецке. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 260 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "kleck"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 260 BYN"
 executionTime: "подача от 30 минут"
 featured: false

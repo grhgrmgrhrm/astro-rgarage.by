@@ -4,7 +4,7 @@ metaTitle: "Эвакуация легковых авто в Минске — о�
 description: "Эвакуация легковых автомобилей в Минске от 30 BYN. Седаны, хэтчбеки, кроссоверы. Бережная погрузка, круглосуточно. ☎ +375 29 373-71-61."
 slug: "evakuaciya-legkovyh-avtomobilej-v-minske"
 pubDate: "2026-03-21"
-image: "/images/services/evakuaciya-legkovyh-avtomobilej-main.png"
+image: "/images/services/evakuaciya-legkovyh-avtomobilej-main.webp"
 serviceSlug: "evakuaciya-legkovyh-avtomobilej"
 category: "evakuator"
 ---

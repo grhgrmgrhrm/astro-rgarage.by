@@ -4,7 +4,7 @@ metaTitle: "Ремонт рулевой рейки в Минске — от 80 B
 description: "Стучит руль? Течёт рейка? Ремонт рулевой рейки в Минске от 80 BYN. Замена ремкомплекта, ремонт без снятия. Гарантия. ☎ +375 29 373-71-61."
 slug: "remont-rulevoj-rejki-v-minske"
 pubDate: "2026-07-31"
-image: "/images/services/remont-i-zamena-rulevoj-rejki-main.jpg"
+image: "/images/services/remont-i-zamena-rulevoj-rejki-main.webp"
 serviceSlug: "remont-i-zamena-rulevoj-rejki"
 category: "slesarnye"
 ---

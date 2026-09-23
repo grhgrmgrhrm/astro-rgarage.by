@@ -4,7 +4,7 @@ metaTitle: "Ремонт электросамокатов в Минске — Ku
 description: "Ремонт и обслуживание электросамокатов и электроскутеров в Минске. Kugoo, Xiaomi, Ninebot, Minimotors. Бесплатная диагностика, гарантия. +375 29 373-71-61."
 slug: "elektrosamokaty-i-elektroskutery"
 category: "avtoelektrika"
-image: "/images/services/bicycle-service.jpg"
+image: "/images/services/bicycle-service.webp"
 priceFrom: "от 10 BYN"
 executionTime: "от 30 минут"
 featured: false

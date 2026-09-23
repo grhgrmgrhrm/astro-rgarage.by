@@ -4,7 +4,7 @@ metaTitle: "Ремонт электровелосипедов в Минске �
 description: "Ремонт и обслуживание электровелосипедов в Минске. Диагностика, аккумулятор, контроллер, мотор-колесо, спицовка. Гарантия. Звоните +375 29 373-71-61."
 slug: "elektrovelosipedy"
 category: "avtoelektrika"
-image: "/images/services/bicycle-service.jpg"
+image: "/images/services/bicycle-service.webp"
 priceFrom: "от 5 BYN"
 executionTime: "от 30 минут"
 featured: false

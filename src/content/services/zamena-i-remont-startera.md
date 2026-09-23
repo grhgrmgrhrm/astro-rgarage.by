@@ -4,7 +4,7 @@ metaTitle: "Ремонт стартера в Минске — диагности
 description: "Ремонт и замена стартера в Минске. Замена бендикса, щёток, втулок, реле. Все марки авто. Диагностика бесплатно. +375 29 373-71-61."
 slug: "zamena-i-remont-startera"
 category: "slesarnye"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 30 BYN"
 executionTime: "от 1 часа"
 featured: false

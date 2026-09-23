@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор Минск цены — прайс-лист, от
 description: "Цены на эвакуатор в Минске. Полный прайс-лист: легковые, джипы, микроавтобусы, грузовики. За МКАД — 1 BYN/км. Без скрытых платежей. +375 29 373-71-61."
 slug: "evakuator-minsk-ceny"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 50 BYN"
 executionTime: "подача от 20 минут"
 featured: false

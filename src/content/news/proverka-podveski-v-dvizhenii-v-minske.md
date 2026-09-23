@@ -4,7 +4,7 @@ metaTitle: "Проверка подвески в движении в Минск�
 description: "Подвеска стучит только на ходу? Проверка подвески в движении в Минске от 35 BYN. Механик едет с вами, диагностика на ходу. ☎ +375 29 373-71-61."
 slug: "proverka-podveski-v-dvizhenii-v-minske"
 pubDate: "2026-04-08"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 serviceSlug: "proverka-podveski-v-dvizhenii"
 category: "diagnostics"
 ---

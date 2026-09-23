@@ -4,7 +4,7 @@ metaTitle: "Ремонт выхлопной системы в Минске — �
 description: "Ремонт выхлопной системы в Минске: глушитель, резонатор, катализатор, гофра. Сварка, замена. Все марки авто. Гарантия. +375 29 373-71-61."
 slug: "remont-vyhlopnoj-sistemy"
 category: "slesarnye"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 20 BYN"
 executionTime: "от 1 часа"
 featured: false

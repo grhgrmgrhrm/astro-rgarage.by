@@ -4,7 +4,7 @@ metaTitle: "Ремонт АКПП в Минске — от 200 BYN, диагно
 description: "АКПП дёргается, буксует, встала в аварийный режим? Ремонт АКПП в Минске от 200 BYN. Диагностика, замена масла, ремонт гидроблока. ☎ +375 29 373-71-61."
 slug: "remont-akpp-v-minske"
 pubDate: "2026-05-02"
-image: "/images/services/slesarnye-raboty-1.jpg"
+image: "/images/services/slesarnye-raboty-1.webp"
 serviceSlug: "slesarnye-raboty"
 category: "slesarnye"
 ---

@@ -4,7 +4,7 @@ metaTitle: "Ремонт рулевого управления в Минске �
 description: "Замена и ремонт рулевого управления в Минске. Рулевые тяги, наконечники, насос ГУР, жидкость. Все марки авто. Гарантия. +375 29 373-71-61."
 slug: "zamena-i-remont-rulevogo-upravleniya"
 category: "slesarnye"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 15 BYN"
 executionTime: "от 30 минут"
 featured: false

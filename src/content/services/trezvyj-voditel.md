@@ -4,7 +4,7 @@ metaTitle: "Трезвый водитель в Минске — круглосу
 description: "Услуга трезвый водитель в Минске 24/7. Профессиональный водитель довезёт вас и ваше авто домой. Подача от 15 минут. Звоните +375 29 373-71-61."
 slug: "trezvyj-voditel"
 category: "other"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 45 BYN"
 executionTime: "подача от 15 минут"
 featured: false

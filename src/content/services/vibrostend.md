@@ -4,7 +4,7 @@ metaTitle: "Вибростенд в Минске — диагностика хо
 description: "Вибростенд в Минске: диагностика подвески на виброплатформе. Проверка амортизаторов, сайлентблоков, опор, шаровых. Объективная оценка состояния ходовой. ☎ +375 29 373-71-61."
 slug: "vibrostend"
 category: "diagnostics"
-image: "/images/services/car-suspension-brakes.jpg"
+image: "/images/services/car-suspension-brakes.webp"
 priceFrom: "от 40 BYN"
 executionTime: "от 30 минут"
 featured: false

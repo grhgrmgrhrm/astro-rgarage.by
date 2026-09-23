@@ -4,7 +4,7 @@ metaTitle: "Комплексная диагностика авто в Минск
 description: "Комплексная диагностика автомобиля в Минске: двигатель, подвеска, тормоза, электрика. Перед покупкой б/у авто или дальней поездкой. От 50 BYN. +375 29 373-71-61."
 slug: "kompleksnaya-diagnostika-avtomobilya"
 category: "diagnostics"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 50 BYN"
 executionTime: "от 1 часа"
 featured: true

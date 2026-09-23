@@ -4,7 +4,7 @@ metaTitle: "Ремонт генератора в Минске — диагнос
 description: "Ремонт и замена генератора в Минске. Замена диодного моста, реле-регулятора, подшипников, обмоток. Все марки авто. +375 29 373-71-61."
 slug: "zamena-i-remont-generatora"
 category: "slesarnye"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 30 BYN"
 executionTime: "от 1 часа"
 featured: false

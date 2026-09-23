@@ -4,7 +4,7 @@ metaTitle: "Ремонт велосипедов в Минске — от 10 BYN 
 description: "Ремонт велосипедов в Минске от 10 BYN. Тормоза, переключатели, камеры, цепь. Все типы велосипедов. ☎ +375 29 373-71-61."
 slug: "remont-velosipedov-v-minske"
 pubDate: "2026-01-14"
-image: "/images/services/velosipedy-main.jpg"
+image: "/images/services/velosipedy-main.webp"
 serviceSlug: "velosipedy"
 category: "slesarnye"
 ---

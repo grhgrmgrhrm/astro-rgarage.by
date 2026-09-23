@@ -4,7 +4,7 @@ metaTitle: "Промывка форсунок и топливной систем
 description: "Промывка топливных форсунок в Минске. Очистка топливной системы бензиновых и дизельных двигателей. Снижение расхода топлива. +375 29 373-71-61."
 slug: "promyvka-forsunok"
 category: "services"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 60 BYN"
 executionTime: "от 1 часа"
 featured: false

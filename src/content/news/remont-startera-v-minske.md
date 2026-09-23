@@ -4,7 +4,7 @@ metaTitle: "Ремонт стартера в Минске — от 25 BYN, с г
 description: "Стартер щёлкает, но не крутит? Машина не заводится? Ремонт стартера в Минске от 25 BYN. Замена втягивающего, бендикса, щёток. ☎ +375 29 373-71-61."
 slug: "remont-startera-v-minske"
 pubDate: "2026-07-07"
-image: "/images/services/zamena-i-remont-startera-main.jpg"
+image: "/images/services/zamena-i-remont-startera-main.webp"
 serviceSlug: "zamena-i-remont-startera"
 category: "avtoelektrika"
 ---

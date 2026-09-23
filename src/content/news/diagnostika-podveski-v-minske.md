@@ -4,7 +4,7 @@ metaTitle: "Диагностика подвески в Минске — от 30 
 description: "Стучит подвеска? Гудит подшипник? Проверьте сами по чек-листу, потом приезжайте на профессиональную диагностику. От 30 BYN. ☎ +375 29 373-71-61."
 slug: "diagnostika-podveski-v-minske"
 pubDate: "2026-09-05"
-image: "/images/services/diagnostika-podveski-main.jpg"
+image: "/images/services/diagnostika-podveski-main.webp"
 serviceSlug: "diagnostika-podveski"
 category: "diagnostics"
 ---

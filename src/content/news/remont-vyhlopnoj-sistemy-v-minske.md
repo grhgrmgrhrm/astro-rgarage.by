@@ -4,7 +4,7 @@ metaTitle: "Ремонт выхлопной системы в Минске — �
 description: "Гремит выхлоп? Запах выхлопа в салоне? Ремонт выхлопной системы в Минске от 30 BYN. Глушитель, катализатор, гофра, датчики. ☎ +375 29 373-71-61."
 slug: "remont-vyhlopnoj-sistemy-v-minske"
 pubDate: "2026-06-01"
-image: "/images/services/remont-vyhlopnoj-sistemy-main.jpg"
+image: "/images/services/remont-vyhlopnoj-sistemy-main.webp"
 serviceSlug: "remont-vyhlopnoj-sistemy"
 category: "slesarnye"
 ---

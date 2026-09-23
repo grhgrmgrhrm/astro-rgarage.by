@@ -4,7 +4,7 @@ metaTitle: "Замена сцепления в Минске — от 150 BYN, с
 description: "Сцепление буксует или ведёт? Замена сцепления в Минске от 150 BYN. Признаки износа, комплекты, гарантия. Все марки авто. ☎ +375 29 373-71-61."
 slug: "zamena-scepleniya-v-minske"
 pubDate: "2026-08-06"
-image: "/images/services/zamena-scepleniya-main.jpg"
+image: "/images/services/zamena-scepleniya-main.webp"
 serviceSlug: "zamena-scepleniya"
 category: "slesarnye"
 ---

@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Березино — от 250 BYN, 24/7 | Рж
 description: "Эвакуатор в Березино. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 250 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "berezino"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 250 BYN"
 executionTime: "подача от 30 минут"
 featured: false

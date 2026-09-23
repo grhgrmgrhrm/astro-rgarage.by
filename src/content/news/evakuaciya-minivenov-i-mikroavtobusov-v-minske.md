@@ -4,7 +4,7 @@ metaTitle: "Эвакуация минивэнов и микроавтобусо�
 description: "Эвакуация минивэнов и микроавтобусов в Минске от 40 BYN. VW Transporter, Mercedes Vito, Ford Transit. Усиленный эвакуатор. ☎ +375 29 373-71-61."
 slug: "evakuaciya-minivenov-i-mikroavtobusov-v-minske"
 pubDate: "2026-03-15"
-image: "/images/services/evakuaciya-minivenov-i-mikroavtobusov-main.jpg"
+image: "/images/services/evakuaciya-minivenov-i-mikroavtobusov-main.webp"
 serviceSlug: "evakuaciya-minivenov-i-mikroavtobusov"
 category: "evakuator"
 ---

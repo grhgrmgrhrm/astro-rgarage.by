@@ -4,7 +4,7 @@ metaTitle: "Ремонт карданных валов в Минске — ба�
 description: "Ремонт карданных валов в Минске. Легковые, грузовые, спецтехника. Замена крестовин, шлицев, балансировка, изготовление. Гарантия. +375 29 373-71-61."
 slug: "remont-kardannyh-valov"
 category: "slesarnye"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 40 BYN"
 executionTime: "от 2 часов"
 featured: false

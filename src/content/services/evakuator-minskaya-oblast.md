@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор Минская область — от 50 BYN, 24
 description: "Эвакуатор по Минской области. Жодино, Солигорск, Слуцк, Борисов, Молодечно, Фаниполь и другие города. Подача от 30 мин. +375 29 373-71-61."
 slug: "evakuator-minskaya-oblast"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 50 BYN"
 executionTime: "подача от 30 минут"
 featured: false

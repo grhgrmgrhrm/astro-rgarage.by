@@ -4,7 +4,7 @@ metaTitle: "Замена амортизаторов в Минске — от 60 
 description: "Машину качает после поворота? Гудит на неровностях? Замена амортизаторов в Минске от 60 BYN. Признаки износа, марки, гарантия. ☎ +375 29 373-71-61."
 slug: "zamena-amortizatorov-v-minske"
 pubDate: "2026-08-12"
-image: "/images/services/zamena-amortizatorov-main.jpg"
+image: "/images/services/zamena-amortizatorov-main.webp"
 serviceSlug: "zamena-amortizatorov"
 category: "slesarnye"
 ---

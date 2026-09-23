@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор в Крупках — от 290 BYN, 24/7 | Ржа
 description: "Эвакуатор в Крупках. Подача из Минска от 30 минут. Легковые, джипы, микроавтобусы. От 290 BYN. Круглосуточно. +375 29 373-71-61."
 slug: "krupki"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 290 BYN"
 executionTime: "подача от 30 минут"
 featured: false

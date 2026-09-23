@@ -4,7 +4,7 @@ metaTitle: "Проверка б/у авто перед покупкой в Ми�
 description: "Проверка автомобиля перед покупкой в Минске. Компьютерная диагностика, осмотр кузова, проверка пробега, юридическая чистота. Более 1500 проверок. +375 29 373-71-61."
 slug: "proverka-avto-pered-pokupkoj"
 category: "services"
-image: "/images/services/car-engine-diagnostic.jpg"
+image: "/images/services/car-engine-diagnostic.webp"
 priceFrom: "от 70 BYN"
 executionTime: "от 1,5 часов"
 featured: true

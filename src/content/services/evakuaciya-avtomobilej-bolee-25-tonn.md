@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор авто более 2,5 тонн в Минске 
 description: "Эвакуация автомобилей весом более 2,5 тонн в Минске. Микроавтобусы, грузовики, спецтехника. Тяжеловозы и тралы. +375 29 373-71-61."
 slug: "evakuaciya-avtomobilej-bolee-25-tonn"
 category: "evakuator"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 60 BYN"
 executionTime: "подача от 30 минут"
 featured: false

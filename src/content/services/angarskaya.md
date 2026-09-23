@@ -4,7 +4,7 @@ metaTitle: "Эвакуатор на Ангарской (Минск) — от 50 
 description: "Эвакуатор на Ангарской в Минске. Подача от 20 минут, круглосуточно. Легковые, джипы, микроавтобусы. От 50 BYN. Звоните +375 29 373-71-61."
 slug: "angarskaya"
 category: "geo"
-image: "/images/services/tow-truck.jpg"
+image: "/images/services/tow-truck.webp"
 priceFrom: "от 50 BYN"
 executionTime: "подача от 20 минут"
 featured: false
