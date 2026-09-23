@@ -22,22 +22,24 @@ RewriteCond %{HTTP_HOST} ^www\.rgarage\.by$ [NC]
 RewriteRule ^(.*)$ https://rgarage.by/$1 [R=301,L]
 
 # --- Точечные страницы Joomla ---
-RewriteRule ^contact/?$ /kontakty/ [R=301,L]
-RewriteRule ^our-clients-feedback/?$ / [R=301,L]
-RewriteRule ^2019-05-12-11-55-23(/.*)?$ / [R=301,L]
-RewriteRule ^component/.*$ / [R=301,L]
-RewriteRule ^remont-turbin/?$ /uslugi/remont-turbin/ [R=301,L]
+# Цели абсолютные с https — за nginx-прокси Apache считает схему http
+# и иначе собирает Location: http://..., что даёт лишний редирект.
+RewriteRule ^contact/?$ https://rgarage.by/kontakty/ [R=301,L]
+RewriteRule ^our-clients-feedback/?$ https://rgarage.by/ [R=301,L]
+RewriteRule ^2019-05-12-11-55-23(/.*)?$ https://rgarage.by/ [R=301,L]
+RewriteRule ^component/.*$ https://rgarage.by/ [R=301,L]
+RewriteRule ^remont-turbin/?$ https://rgarage.by/uslugi/remont-turbin/ [R=301,L]
 
 # --- Удалённые услуги → ближайший аналог ---
-RewriteRule ^autoservice/(antikorrozijnaya-obrabotka-avtomobilya|polirovka-pokraska-avto|podbor-avtoemalej|razval-shozhdenie|ustanovka-i-podklyuchenie-farkopa|sar-catalog)/?$ /uslugi/ [R=301,L]
-RewriteRule ^autoservice/evakuaciya-parketnikov-i-dzhipov/?$ /uslugi/evakuator-v-minske/ [R=301,L]
+RewriteRule ^autoservice/(antikorrozijnaya-obrabotka-avtomobilya|polirovka-pokraska-avto|podbor-avtoemalej|razval-shozhdenie|ustanovka-i-podklyuchenie-farkopa|sar-catalog)/?$ https://rgarage.by/uslugi/ [R=301,L]
+RewriteRule ^autoservice/evakuaciya-parketnikov-i-dzhipov/?$ https://rgarage.by/uslugi/evakuator-v-minske/ [R=301,L]
 
 # --- Общее правило: /autoservice/{slug} → /uslugi/{slug} ---
-RewriteRule ^autoservice/?$ /uslugi/ [R=301,L]
-RewriteRule ^autoservice/(.+)$ /uslugi/$1 [R=301,L]
+RewriteRule ^autoservice/?$ https://rgarage.by/uslugi/ [R=301,L]
+RewriteRule ^autoservice/(.+)$ https://rgarage.by/uslugi/$1 [R=301,L]
 
 # --- Joomla index.php?option=... → главная ---
 RewriteCond %{QUERY_STRING} ^option=
-RewriteRule ^index\.php$ /? [R=301,L]
+RewriteRule ^index\.php$ https://rgarage.by/? [R=301,L]
 
 </IfModule>
