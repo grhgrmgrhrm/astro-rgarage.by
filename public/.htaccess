@@ -15,7 +15,9 @@ RewriteEngine On
 RewriteBase /
 
 # --- HTTPS + канонический домен (без www) ---
-RewriteCond %{HTTPS} off [OR]
+# Apache стоит за nginx-прокси: реальный протокол клиента в X-Forwarded-Proto,
+# %{HTTPS} у Apache всегда off — проверять его нельзя (был бы цикл редиректов).
+RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
 RewriteCond %{HTTP_HOST} ^www\.rgarage\.by$ [NC]
 RewriteRule ^(.*)$ https://rgarage.by/$1 [R=301,L]
 
