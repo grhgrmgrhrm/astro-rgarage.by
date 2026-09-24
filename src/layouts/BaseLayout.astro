@@ -33,6 +33,24 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
     gtag('js', new Date());
     gtag('config', 'AW-18009243427');
   </script>
+  <script is:inline>
+    // Конверсия «Клик по номеру телефона»: событие на любую tel:-ссылку.
+    // После создания конверсии в Google Ads заменить AW-18009243427/PHONE_CALL
+    // на send_to из выданного сниппета.
+    var PHONE_CONVERSION = 'AW-18009243427/PHONE_CALL';
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+      if (!a || typeof gtag !== 'function') return;
+      gtag('event', 'phone_call_click', {
+        event_category: 'contact',
+        event_label: a.getAttribute('href'),
+        page_path: window.location.pathname
+      });
+      if (PHONE_CONVERSION.indexOf('/') !== -1 && PHONE_CONVERSION.indexOf('PHONE_CALL') === -1) {
+        gtag('event', 'conversion', { send_to: PHONE_CONVERSION });
+      }
+    });
+  </script>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
