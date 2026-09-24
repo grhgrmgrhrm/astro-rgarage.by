@@ -25,6 +25,15 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
   {description && <meta name="description" content={description} />}
   <link rel="canonical" href={Astro.url} />
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18009243427"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18009243427');
+  </script>
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content={title} />
