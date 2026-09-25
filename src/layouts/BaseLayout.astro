@@ -49,8 +49,24 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
       if (PHONE_CONVERSION.indexOf('/') !== -1 && PHONE_CONVERSION.indexOf('PHONE_CALL') === -1) {
         gtag('event', 'conversion', { send_to: PHONE_CONVERSION });
       }
+      if (typeof ym === 'function') {
+        ym(113059547, 'reachGoal', 'phone_click');
+      }
     });
   </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script is:inline type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113059547', 'ym');
+
+    ym(113059547, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <!-- /Yandex.Metrika counter -->
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -67,6 +83,7 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
   />
 </head>
 <body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/113059547" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- Top bar: social + phone -->
   <div class="bg-garage-black text-garage-muted text-sm border-b border-garage-gray">
     <div class="max-w-7xl mx-auto px-4 py-1.5 flex items-center justify-between">
